@@ -1,0 +1,119 @@
+\RequirePackage{silence}
+\WarningFilter{remreset}{The remreset package}
+\documentclass[11pt]{book}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[mathscr]{eucal}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{standalone}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{mathpazo}
+\usepackage{thmtools}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+%\usepackage{tcolorbox}
+
+%%%%%%%%%%%%% HEADERS %%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\leftmark}
+\headheight=13.6pt
+
+%%%%%%%%%%%%% ENVIRONMENTS %%%%%%%%%%%%%%%
+\declaretheoremstyle[headfont=\color{blue!45!black!}\normalfont\bfseries]{bluestyle}
+\declaretheoremstyle[headfont=\color{green!45!black!}\normalfont\bfseries]{greenstyle}
+\declaretheoremstyle[headfont=\color{red!45!black!}\normalfont\bfseries]{redstyle}
+\declaretheorem[numberwithin=section, style=definition]{definition}
+\declaretheorem[sharenumber=definition, style=definition]{theorem}
+\declaretheorem[sharenumber=definition, style=definition]{exercise}
+\declaretheorem[sharenumber=definition, style=definition]{lemma}
+\declaretheorem[sharenumber=definition, style=definition]{proposition}
+\declaretheorem[sharenumber=definition, style=definition]{corollary}
+\declaretheorem[sharenumber=definition, style=definition]{remark}
+\declaretheorem[sharenumber=definition, style=definition]{axiom}
+\declaretheorem[sharenumber=definition, style=definition]{example}
+\declaretheorem[sharenumber=definition, style=definition]{result}
+\declaretheorem[sharenumber=definition, style=definition]{problem}
+\declaretheorem[sharenumber=definition, style=definition]{conjecture}
+\declaretheorem[sharenumber=definition, style=definition]{algorithm}
+\declaretheorem[sharenumber=definition, style=definition]{heuristic}
+\declaretheorem[sharenumber=definition, style=definition]{motivation}
+\declaretheorem[sharenumber=definition, style=definition]{intuition}
+\declaretheorem[sharenumber=definition, style=definition]{anecdote}
+\declaretheorem[sharenumber=definition, style=definition]{abbriviation}
+\declaretheorem[sharenumber=definition, style=definition]{convention}
+
+\declaretheorem[name={Definition},sharenumber=definition, shaded={margin=0.025\linewidth, textwidth=0.95\linewidth, bgcolor={red!3!white!}}, style=redstyle]{definitionbox}
+
+\declaretheorem[name={Theorem},sharenumber=definition, shaded={margin=0.025\linewidth, textwidth=0.95\linewidth, bgcolor={blue!3!white!}}, style=bluestyle]{theorembox}
+
+\declaretheorem[name={Exercise},sharenumber=definition, shaded={margin=0.025\linewidth, textwidth=0.95\linewidth, bgcolor={green!3!white!}}, style=greenstyle]{exercisebox}
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+\newenvironment{abc}{\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
+\renewcommand{\sectionautorefname}{\S}
+\renewcommand{\subsectionautorefname}{\S}
+\renewcommand{\subsubsectionautorefname}{\S}
+
+
+%%%%%%%%%%%%% SHORTCUTS %%%%%%%%%%%%%%%
+\DeclareMathOperator{\N}{\mathbf{N}}
+\DeclareMathOperator{\Z}{\mathbf{Z}}
+\DeclareMathOperator{\R}{\mathbf{R}}
+\DeclareMathOperator{\F}{\mathbf{F}}
+\DeclareMathOperator{\Q}{\mathbf{Q}}
+\DeclareMathOperator{\GL}{\mathrm{GL}}
+\DeclareMathOperator{\SL}{\mathrm{SL}}
+\DeclareMathOperator{\lcm}{\operatorname{lcm}}
+\DeclareMathOperator{\ord}{\operatorname{ord}}
+\DeclareMathOperator{\sgn}{\operatorname{sgn}}
+\DeclareMathOperator{\Aut}{\operatorname{Aut}}
+\DeclareMathOperator{\Inn}{\operatorname{Inn}}
+\DeclareMathOperator{\End}{\operatorname{End}}
+\DeclareMathOperator{\stab}{\operatorname{stab}}
+\DeclareMathOperator{\orb}{\operatorname{orb}}
+%\DeclareMathOperator{\ker}{\operatorname{ker}}
+\DeclareMathOperator{\im}{\operatorname{im}}
+\DeclareMathOperator{\IM}{\operatorname{Im}}
+\DeclareMathOperator{\RE}{\operatorname{Re}}
+\DeclareMathOperator{\Span}{\operatorname{span}}
+\DeclareMathOperator{\spec}{\operatorname{spec}}
+\DeclareMathOperator{\Char}{\operatorname{char}}
+\DeclareMathOperator{\Rank}{\operatorname{rank}}
+\DeclareMathOperator{\proj}{\operatorname{proj}}
+\DeclareMathOperator{\normal}{\trianglelefteq}
+
+
+\title{
+\vspace{-2.0cm}
+\Large{Project Sigma}\\
+\vspace{1cm}
+\huge{\bf{Algebraic Geometry}}\\
+\vspace{0.4cm}
+\large{Reference \& Exercise}
+\vspace{3cm}}
+\author{Yunhai Xiang}
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+\doublespacing
+\tableofcontents
+\singlespacing
+\newpage
+%\setlength{\parskip}{10pt}
+\chapter{Preliminaries}
+
+\end{document}
