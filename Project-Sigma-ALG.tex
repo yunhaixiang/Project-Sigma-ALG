@@ -112,6 +112,26 @@
 \singlespacing
 \newpage
 %\setlength{\parskip}{10pt}
-\chapter{Algebraic Varieties}
+\chapter{Affine Algebraic Sets}
+Let $k$ be a field and $n\in\mathbf N$, then the \textit{affine space} $\mathbf A^n(k)$ of dimension $n$, or simply $\mathbf A^n$ if it does not cause confusion, is the same structure as the $n$-dimensional vector space $k^n$ over $k$, except with affine maps as morphisms, where an affine map is a linear map shifted by a constant. In this course note, unless otherwise specified, I will take $k=\mathbf C$ the set of complex numbers.
 
+\begin{definition}
+Suppose that $S\subseteq k[X_1,\dots,X_n]$ for some $n\in\mathbf N$, we define
+\[\mathcal{V}(S)=\{x\in \mathbf A^n(k):\forall f\in S,\,f(x)=0\}\]
+as the \textit{set of zeros} of $S$. Subsets of $\mathbf A^n(k)$ that are sets of zeros of some $S$ are called \textit{algebraic}.
+\end{definition}
+For example, in $\mathbf{A}^2(k)$, the sets $\mathcal{V}(Y)$ and $\mathcal{V}(X)$ are the $x$-axis and the $y$-axis, the set $\mathcal{V}(X,Y)$ is the origin. The set $\mathcal{V}(f)$, where $f\in k[X,Y]$ is polynomial of degree $2$, is known as a \textit{conic section}, for example, the circle $\mathcal{V}(X^2+Y^2-1)$, the parabola $\mathcal{V}(Y-X^2)$, and the hyperbola $\mathcal{V}(XY-1)$.
+\begin{definition}Let $X\subseteq \mathbf A^n(k)$, then define the ideal corresponding to $X$
+\[\mathcal{I}(X)=\{f\in k[X_1,\dots,X_n]:\forall p\in X,\,f(p)=0\}\]
+which is the set of polynomials vanishing on all of $X$.
+\end{definition}
+We can easily verify that $\mathcal{I}(X)$ is indeed an ideal of $k[X_1,\dots,X_n]$, and it is a radical ideal. We recall that a radical ideal $I\subseteq R$ is an ideal that satisfies $I=\sqrt{I}:=\{r\in R:\exists n>0,\, r^n\in I\}$. Note that we always have $I\subseteq\sqrt{I}$ and $\sqrt{I}$ is an ideal if $I$ is. Thus, to see that $\mathcal{I}(X)$ is a radical ideal, note that $f^n(p)=0$ for all $p\in X$ implies $f(p)=0$ for all $p\in X$, as $k$ is a field.
+
+\begin{theorembox}[Hilbert’s Nullstellensatz]There is a bijective correspondance
+\[\{\textrm{radical\ ideals\ of\ }k[X_1,\dots,X_n]\}\longleftrightarrow\{\textrm{algebraic\ sets\ of\ }\mathbf A^n(k)\}\]
+given by $I\mapsto \mathcal{V}(I)$ and $X\mapsto \mathcal{I}(X)$.
+\begin{proof}
+Note that each $\mathcal{V}(I)$ is an algebraic set, and each $\mathcal{I}(X)$ is a radical ideal, so these maps are well defined. Next, for a radical ideal $I$, we have 
+\end{proof}
+\end{theorembox}
 \end{document}
