@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  9 MAY 2021 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  9 MAY 2021 21:36
 entering extended mode
 **./Project-Sigma-ALG.tex
 (Project-Sigma-ALG.tex
@@ -1091,20 +1091,26 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 116.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 119.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 124.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 128.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 136.
 Package hyperref Info: bookmark level for unknown theorembox defaults to 0 on i
-nput line 130.
-[5] (Project-Sigma-ALG.aux)
+nput line 142.
+[5] [6] (Project-Sigma-ALG.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG.out' has not changed.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23857 strings out of 481267
- 454462 string characters out of 2906339
- 718961 words of memory out of 3000000
- 40562 multiletter control sequences out of 15000+200000
+ 23870 strings out of 481267
+ 454690 string characters out of 2906339
+ 720962 words of memory out of 3000000
+ 40566 multiletter control sequences out of 15000+200000
  430365 words of font info for 99 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 128i,11n,130p,497b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,11n,130p,779b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/base/8r.enc}</Users/yunhai/Library/Application Support/MiKTeX/texmfs/instal
 l/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/yunhai/Library/Application 
@@ -1115,9 +1121,9 @@ stall/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Su
 pport/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/
 Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr
 i8a.pfb>
-Output written on Project-Sigma-ALG.pdf (5 pages, 84908 bytes).
+Output written on Project-Sigma-ALG.pdf (6 pages, 90356 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

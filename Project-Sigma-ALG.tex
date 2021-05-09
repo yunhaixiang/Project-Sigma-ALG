@@ -118,20 +118,32 @@ Let $k$ be a field and $n\in\mathbf N$, then the \textit{affine space} $\mathbf 
 \begin{definition}
 Suppose that $S\subseteq k[X_1,\dots,X_n]$ for some $n\in\mathbf N$, we define
 \[\mathcal{V}(S)=\{x\in \mathbf A^n(k):\forall f\in S,\,f(x)=0\}\]
-as the \textit{set of zeros} of $S$. Subsets of $\mathbf A^n(k)$ that are sets of zeros of some $S$ are called \textit{algebraic}.
+as the \textit{set of zeros} of $S$. Subsets of $\mathbf A^n(k)$ that are sets of zeros of some $S$ are called (affine) \textit{algebraic}.
 \end{definition}
-For example, in $\mathbf{A}^2(k)$, the sets $\mathcal{V}(Y)$ and $\mathcal{V}(X)$ are the $x$-axis and the $y$-axis, the set $\mathcal{V}(X,Y)$ is the origin. The set $\mathcal{V}(f)$, where $f\in k[X,Y]$ is polynomial of degree $2$, is known as a \textit{conic section}, for example, the circle $\mathcal{V}(X^2+Y^2-1)$, the parabola $\mathcal{V}(Y-X^2)$, and the hyperbola $\mathcal{V}(XY-1)$.
-\begin{definition}Let $X\subseteq \mathbf A^n(k)$, then define the ideal corresponding to $X$
+For example, in $\mathbf{A}^2(\mathbf R)$, the sets $\mathcal{V}(Y)$ and $\mathcal{V}(X)$ are the $x$-axis and the $y$-axis, the set $\mathcal{V}(X,Y)$ is the origin. The set $\mathcal{V}(f)$, where $f\in k[X,Y]$ is polynomial of degree $2$, is known as a \textit{conic section}, for example, the circle $\mathcal{V}(X^2+Y^2-1)$, the parabola $\mathcal{V}(Y-X^2)$, and the hyperbola $\mathcal{V}(XY-1)$. These are all examples of algebraic sets. We should also mention examples of non-algebraic sets. The set $\mathbf Z$ considered as a subset of $\mathbf A^1(\mathbf R)$ is obviously not algebraic. Next, we claim that to find all algebraic sets, we need not consider all subsets of $k[X_1,\dots,X_n]$. Let $R$ be a commutative ring.
+\begin{theorem}$R$ is noetherian iff all ideals $I\subseteq R$ are finitely generated.
+\end{theorem}
+\begin{theorem}[Hilbert's Basis theorem]If $R$ is noetherian, then so is $R[X_1,\dots,X_n]$.
+\end{theorem}
+\begin{corollary}The ring $k[X_1,\dots,X_n]$ is noetherian.
+\end{corollary}
+Thus for $S\subseteq k[X_1,\dots,X_n]$, the ideal $\langle S\rangle=(f_1,\dots,f_m)$ for some $f_1,\dots,f_m\in k[X_1,\dots,X_n]$. We claim that $\mathcal{V}(S)=\mathcal{V}(\langle S\rangle)=\mathcal{V}(f_1,\dots,f_m)$. Obviously 
+
+\begin{definition}Let $X\subseteq \mathbf A^n(k)$, then define the ideal $\mathcal{I}(X)$ of $k[X_1,\dots,X_n]$ as 
 \[\mathcal{I}(X)=\{f\in k[X_1,\dots,X_n]:\forall p\in X,\,f(p)=0\}\]
-which is the set of polynomials vanishing on all of $X$.
+which is a well-defined ideal as we can verify easily.
 \end{definition}
-We can easily verify that $\mathcal{I}(X)$ is indeed an ideal of $k[X_1,\dots,X_n]$, and it is a radical ideal. We recall that a radical ideal $I\subseteq R$ is an ideal that satisfies $I=\sqrt{I}:=\{r\in R:\exists n>0,\, r^n\in I\}$. Note that we always have $I\subseteq\sqrt{I}$ and $\sqrt{I}$ is an ideal if $I$ is. Thus, to see that $\mathcal{I}(X)$ is a radical ideal, note that $f^n(p)=0$ for all $p\in X$ implies $f(p)=0$ for all $p\in X$, as $k$ is a field.
+\begin{lemma}Suppose that $I$ is an ideal of $k[X_1,\dots,X_n]$, then 
+\[\mathcal{I}(\mathcal{V}(I))=\sqrt{I}\]
+where the radical $\sqrt{I}=\{r\in R:\exists n>0,\, r^n\in I\}$.
+\end{lemma}
+
 
 \begin{theorembox}[Hilbert’s Nullstellensatz]There is a bijective correspondance
 \[\{\textrm{radical\ ideals\ of\ }k[X_1,\dots,X_n]\}\longleftrightarrow\{\textrm{algebraic\ sets\ of\ }\mathbf A^n(k)\}\]
 given by $I\mapsto \mathcal{V}(I)$ and $X\mapsto \mathcal{I}(X)$.
 \begin{proof}
-Note that each $\mathcal{V}(I)$ is an algebraic set, and each $\mathcal{I}(X)$ is a radical ideal, so these maps are well defined. Next, for a radical ideal $I$, we have 
+Note that each $\mathcal{V}(I)$ is an algebraic set, and each $\mathcal{I}(X)$ is a radical ideal, so these maps are well defined. Next, for an ideal $I$, 
 \end{proof}
 \end{theorembox}
 \end{document}
