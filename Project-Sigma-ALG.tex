@@ -118,7 +118,7 @@ Let $k$ be a field and $n\in\mathbf N$, then the \textit{affine space} $\mathbf 
 \begin{definition}
 Suppose that $S\subseteq k[X_1,\dots,X_n]$ for some $n\in\mathbf N$, we define
 \[\mathcal{V}(S)=\{x\in \mathbf A^n(k):\forall f\in S,\,f(x)=0\}\]
-as the \textit{zero-locus} of $S$. Subsets of $\mathbf A^n(k)$ that are the \textit{zero-loci} of some $S$ are called (affine) \textit{algebraic}.
+as the \textit{zero-locus} of $S$. A subset of $\mathbf A^n(k)$ that is the zero-locus of some $S$ is called \textit{(affine) algebraic}.
 \end{definition}
 For example, in $\mathbf{A}^2(\mathbf R)$, the sets $\mathcal{V}(\{Y\})$ and $\mathcal{V}(\{X\})$ are the $x$-axis and the $y$-axis, the set $\mathcal{V}(\{X,Y\})$ is the origin. The set $\mathcal{V}(\{f\})$, where $f\in k[X,Y]$ is polynomial of degree $2$, is known as a \textit{conic section}, for example, the circle $\mathcal{V}(\{X^2+Y^2-1\})$, the parabola $\mathcal{V}(\{Y-X^2\})$, and the hyperbola $\mathcal{V}(\{XY-1\})$. These are all examples of algebraic sets. We should also mention examples of non-algebraic sets. The set $\mathbf Z$ considered as a subset of $\mathbf A^1(\mathbf R)$ is obviously not algebraic. Next, we claim that to find all algebraic sets, we need not consider all subsets of $k[X_1,\dots,X_n]$. Let $R$ be a commutative ring, we recall the following theorems.
 \begin{theorem}$R$ is noetherian iff all ideals $I\subseteq R$ are finitely generated.
@@ -135,10 +135,19 @@ which is a well-defined ideal as we can verify easily.
 In fact, not only is $\mathcal{I}(X)$ an ideal, it is also a radical ideal. We recall that an radical ideal of a commutative ring $R$ is an ideal $I\subseteq R$ with $I=\sqrt{I}$ where $\sqrt{I}=\{r\in R:\exists m>0,\, r^m\in I\}$. In other words, a radical ideal is an ideal $I\subseteq R$ where for all $r\in R$, if $r^m\in I$ for some $m>0$, then $r\in I$. To see that $\mathcal{I}(X)$ is a radical ideal, note that if $f^m\in \mathcal{I}(X)$ for some $m>0$, then $f^m(p)=0$ for all $p\in X$, then $f(p)=0$ for all $p\in X$ as $k$ is a field, hence $f\in \mathcal{I}(X)$. 
 
 Similar to how $\mathcal{V}(S)\subseteq \mathcal{V}(T)$ when $T\subseteq S\subseteq k[X_1,\dots,X_n]$, we easily have $\mathcal{I}(X)\subseteq \mathcal{I}(Y)$ when $Y\subseteq X\subseteq \mathbf A^n(k)$. Let $f\in S\subseteq k[X_1,\dots,X_n]$, then by definition $f$ vanishes on all of $\mathcal{V}(S)$, therefore $f\in \mathcal{I}(\mathcal{V}(S))$. Let $p\in X\subseteq \mathbf A^n(k)$, then by definition $p$ is a zero of all polynomials of $\mathcal{I}(X)$, therefore $p\in \mathcal{V}(\mathcal{I}(X))$. Hence we have $S\subseteq \mathcal{I}(\mathcal{V}(S))$ and $X\subseteq \mathcal{V}(\mathcal{I}(X))$. From these facts, we derive that $\mathcal{I}(X)= \mathcal{I}(\mathcal{V}(\mathcal{I}(X)))$ and $\mathcal{V}(S)= \mathcal{V}(\mathcal{I}(\mathcal V(S)))$. In fact, we have the following.
-
-\begin{theorembox}[Hilbert’s Nullstellensatz]There is a bijective correspondance
+\begin{theorembox}There is a bijective correspondance
 \[\{\textrm{radical\ ideals\ of\ }k[X_1,\dots,X_n]\}\longleftrightarrow\{\textrm{algebraic\ sets\ of\ }\mathbf A^n(k)\}\]
-given by $I\mapsto \mathcal{V}(I)$ and $X\mapsto \mathcal{I}(X)$. 
+given by $I\mapsto \mathcal{V}(I)$ and $X\mapsto \mathcal{I}(X)$.
 \end{theorembox}
-whose proof we will provide later. It is really this observation that is central to algebraic geometry. Next, we observe that $\mathcal{V}()$
+whose proof we will delay until later in this note. This observation is central to algebraic geometry. 
+
+We observe that for a nonempty family of ideals $I_{\alpha}\subseteq k[X_1,\dots,X_n]$ indexed by $\alpha$, we have $\mathcal{V}(\sum_{\alpha}I_{\alpha})=\mathcal{V}(\bigcup_{\alpha}I_{\alpha})=\bigcap_{\alpha}\mathcal{V}(I_{\alpha})$. This should be easy to verify, and it tells us that the arbitrary intersection of algebraic sets is algebraic. Next, we observe that for ideals $I,J\subseteq k[X_1,\dots,X_n]$, we have $\mathcal{V}(I\cap J)=\mathcal{V}(I\cdot J)=\mathcal{V}(I)\cup \mathcal{V}(J)$, where the set $I\cdot J=\{fg:f\in I,g\in J\}$. Let $p\in \mathcal{V}(I)\cup \mathcal{V}(J)$, assume without loss of generality that $p\in \mathcal{V}(I)$. For all $f\in I\cap J$, we have $f\in I$, so $f(p)=0$, hence $p\in \mathcal{V}(I\cap J)$, thus $\mathcal{V}(I)\cup\mathcal{V}(J)\subseteq \mathcal{V}(I\cap J)$. On the other hand, for each $fg\in I\cdot J$, we have $(fg)(p)=f(p)g(p)=0$, thus we have $\mathcal{V}(I)\cup\mathcal{V}(J)\subseteq \mathcal{V}(I\cdot J)$. Conversely, if $p\not\in \mathcal{V}(I)\cup \mathcal{V}(J)$, then there exists $f\in \mathcal{V}(I)$ and $g\in \mathcal{V}(J)$ such that $f(p)\ne 0$ and $g(p)\ne 0$, and hence $(fg)(p)=f(p)g(p)\ne 0$ as $k$ is a field. Since we know that $fg\in I\cdot J$ and $fg\in I\cap J$, we have $p\not\in \mathcal{V}(I\cdot J)$ and $p\not\in \mathcal{V}(I\cap J)$. Thus $\mathcal{V}(I\cap J),\mathcal{V}(I\cdot J)\subseteq \mathcal{V}(I)\cup\mathcal{V}(J)$.
+
+
+\begin{definitionbox}An algebraic set $V$ is \textit{irreducible} if it cannot be written as $V=V_1\cup V_2$ where the algebraic sets $V_1,V_2\subset V$ properly, and such a set is called an \textit{(algebraic) varieties}.
+\end{definitionbox}
+\begin{lemma}An algebraic set $V$ is a variety iff $\mathcal{I}(V)$ is prime.
+\begin{proof}Suppose that $\mathcal{I}(V)$ is not prime, that $fg\in \mathcal{I}(V)$ and $f\not\in \mathcal{I}(V)$.
+\end{proof}
+\end{lemma}
 \end{document}
