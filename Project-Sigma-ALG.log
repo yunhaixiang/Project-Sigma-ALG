@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  10 MAY 2021 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  11 MAY 2021 14:50
 entering extended mode
 **./Project-Sigma-ALG.tex
 (Project-Sigma-ALG.tex
@@ -1091,14 +1091,6 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 116.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 119.
-
-Overfull \hbox (3.86844pt too wide) in paragraph at lines 123--124
-\OT1/ppl/m/n/10.95 hyperbola $\OMS/zplm/m/n/10.95 V\OT1/zplm/m/n/10.95 (\OMS/zp
-lm/m/n/10.95 f\OML/zplm/m/it/10.95 XY \OMS/zplm/m/n/10.95   \OT1/ppl/m/n/10.95 
-1\OMS/zplm/m/n/10.95 g\OT1/zplm/m/n/10.95 )$\OT1/ppl/m/n/10.95 . These are all 
-examples of algebraic sets. We should also mention examples
- []
-
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 124.
 [5]
@@ -1106,20 +1098,22 @@ Package hyperref Info: bookmark level for unknown theorembox defaults to 0 on i
 nput line 138.
 Package hyperref Info: bookmark level for unknown definitionbox defaults to 0 o
 n input line 147.
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
+ut line 149.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 149.
- [6] (Project-Sigma-ALG.aux)
+line 151.
+ [6] [7] (Project-Sigma-ALG.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG.out' has not changed.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23874 strings out of 481267
- 454699 string characters out of 2906339
- 724962 words of memory out of 3000000
- 40566 multiletter control sequences out of 15000+200000
+ 23878 strings out of 481267
+ 454757 string characters out of 2906339
+ 729962 words of memory out of 3000000
+ 40567 multiletter control sequences out of 15000+200000
  431278 words of font info for 103 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 128i,11n,130p,1451b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,11n,130p,1812b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/base/8r.enc}</Users/yunhai/Library/Application Support/MiKTeX/texmfs/instal
 l/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/yunhai/Library/Application 
@@ -1134,9 +1128,9 @@ all/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Supp
 ort/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Li
 brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on Project-Sigma-ALG.pdf (6 pages, 113392 bytes).
+Output written on Project-Sigma-ALG.pdf (7 pages, 117847 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
