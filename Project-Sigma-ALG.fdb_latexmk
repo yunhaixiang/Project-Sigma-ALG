@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1620715846 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1620715847
+["pdflatex"] 1620720849 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1620720850
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1615737732 6309110 07cd7117665a88a3b6003c3369adf3f8 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1616223517 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc" 1615738380 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -204,13 +204,13 @@
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/varwidth/varwidth.sty" 1615738156 10894 d359a13923460b2a73d4312d613554c8 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1615738246 57049 74963e80d77be39a0b7442967b27c75b ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1615738087 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "Project-Sigma-ALG.aux" 1620715846 2602 239dea2383cb794a8884ceb519b268a6 "pdflatex"
-  "Project-Sigma-ALG.out" 1620715846 154 edcc41d7211214634470fb5189de8e0d "pdflatex"
-  "Project-Sigma-ALG.tex" 1620715843 12963 af513ff2fb522dba0b14f673a5f1c0f1 ""
-  "Project-Sigma-ALG.toc" 1620715846 77 8e3b3d34845233722c7c4016528123a4 "pdflatex"
+  "Project-Sigma-ALG.aux" 1620720850 3063 cc5bfbbee2130c243df26f260a0005d7 "pdflatex"
+  "Project-Sigma-ALG.out" 1620720850 154 edcc41d7211214634470fb5189de8e0d "pdflatex"
+  "Project-Sigma-ALG.tex" 1620720849 15022 61a600baea60c72a774db092d6509e3f ""
+  "Project-Sigma-ALG.toc" 1620720850 77 8e3b3d34845233722c7c4016528123a4 "pdflatex"
   (generated)
-  "Project-Sigma-ALG.aux"
-  "Project-Sigma-ALG.out"
   "Project-Sigma-ALG.log"
-  "Project-Sigma-ALG.toc"
+  "Project-Sigma-ALG.aux"
   "Project-Sigma-ALG.pdf"
+  "Project-Sigma-ALG.toc"
+  "Project-Sigma-ALG.out"
