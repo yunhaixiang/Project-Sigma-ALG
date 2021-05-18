@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  12 MAY 2021 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  18 MAY 2021 02:26
 entering extended mode
 **./Project-Sigma-ALG-Exercise.tex
 (Project-Sigma-ALG-Exercise.tex
@@ -1091,19 +1091,24 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 118.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 118.
-[5] (Project-Sigma-ALG-Exercise.aux)
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+[6] (Project-Sigma-ALG-Exercise.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG-Exercise.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23854 strings out of 481267
- 454542 string characters out of 2906339
- 722050 words of memory out of 3000000
- 40555 multiletter control sequences out of 15000+200000
- 430906 words of font info for 101 fonts, out of 3000000 for 9000
+ 23869 strings out of 481267
+ 454732 string characters out of 2906339
+ 726049 words of memory out of 3000000
+ 40558 multiletter control sequences out of 15000+200000
+ 431163 words of font info for 102 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 128i,11n,130p,520b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,11n,130p,752b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/base/8r.enc}</Users/yunhai/Library/Application Support/MiKTeX/texmfs/instal
 l/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/yunhai/Library/Application S
@@ -1114,9 +1119,9 @@ ll/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Suppo
 rt/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Lib
 rary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on Project-Sigma-ALG-Exercise.pdf (5 pages, 82117 bytes).
+Output written on Project-Sigma-ALG-Exercise.pdf (6 pages, 90374 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

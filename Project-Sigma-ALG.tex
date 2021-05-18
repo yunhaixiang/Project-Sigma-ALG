@@ -166,5 +166,13 @@ into algebraic varieties. This is easy to visualize and check that it is true. I
 Suppose that $\mathcal{L}$ is the set of algebraic sets that do not admit a finite variety decomposition, we will show that $\mathcal{L}=\emptyset$. Suppose the contrary, then $\mathcal{L}$ has a minimal element $V$ w.r.t inclusion by \autoref{thm:min} on $\mathcal{I}[\mathcal{L}]$. Since $V\in A$, we have $V$ is reducible, hence $V=V_1\cup V_2$ with algebraics sets $V_1,V_2\subset V$ properly. Since $V$ is minimal, we must have $V_1,V_2\not\in \mathcal{L}$. Thus $V_1,V_2$ admit finite variety decompositions, contradiction. Next, we show the uniqueness. Let $V=V_1\cup\cdots\cup V_m=W_1\cup\dots\cup W_h$ be decompositions, then $V_i=(V_i\cap W_1)\cup\cdots\cup (V_i\cap W_h)$, which by the irreducibility of $V_i$, tells us that $V_i\subseteq W_{\sigma(i)}$ for some $\sigma(i)$. Similarly $W_j\subseteq V_{\delta(j)}$ for some $\delta(j)$. Thus $V_i\subseteq W_{\sigma(i)}\subseteq V_{\delta(\sigma(i))}$. However, $V_i\subseteq V_{\delta(\sigma(i))}$ implies that $V_i=V_{\delta(\sigma(i))}$, so $i=\delta(\sigma(i))$ and $V_i=W_{\sigma(i)}$. 
 \end{proof}
 \end{theorem}
-
+By developing this general theory further, we will take a look at the affine plane $\mathbf A^2(k)$ and find all its algebraic subsets. From what we showed above, it suffice to find all algebraic varieties. From there, we will conclude that the irreducible algebraic subsets of $\mathbf A^2(k)$ are the empty set $\emptyset$, the whole space $\mathbf A^2(k)$, single points, and irreducible plane curves $\mathcal{V}((F))$, where $F$ is an irreducible polynomial and $\mathcal{V}((F))$ is infinite.
+\begin{proposition}Let $F,G\in k[X,Y]$ be coprime, then $\mathcal{V}((F,G))$ is a finite set of points.
+\begin{proof}
+Since $F,G$ are coprime in $k[X,Y]$, they are coprime in $k(X)[Y]$ as well. Since $k(X)[Y]$ is PID, $(F,G)=(1)$, hence $RF+SG=1$ for some $R,S\in k(X)[Y]$. Choose nonzero $D\in k[X]$ with $DR=A$ and $DS=A$ such that $A,B\in k[X,Y]$, then $AF+BG=D$. If $(a,b)\in \mathcal{V}((F,G))$ then $D(a)=0$, but $D$ has only finite number of zeros. 
+\end{proof}
+\end{proposition}
+We claim that if $F\in k[X,Y]$ is irreducible and $\mathcal{V}((F))$ is infinite, then $\mathcal{I}(\mathcal{V}((F)))=(F)$ and $\mathcal{V}(F)$ is irreducible. If $G\in \mathcal{I}(\mathcal{V}((F)))$ then $\mathcal{V}((F,G))$ is infinite, so $G\in (F)$. Hence $(F)\subseteq \mathcal{I}(\mathcal{V}((F)))$. 
+\begin{proposition}Suppose that $k$ is algebraically closed and $F$ is a nonconstant polynomial in $k[X,Y]$ with decomposition $F=F_1^{n_1}\cdots F_r^{n_r}$, then $\mathcal{V}((F))=\mathcal{V}((F_1))\cup\cdots\cup \mathcal{V}((F_r))$ is the decomposition of $\mathcal{V}((F))$, and $\mathcal{I}(\mathcal{V}((F)))=(F_1\cdots F_r)$.
+\end{proposition}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  11 MAY 2021 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  12 MAY 2021 17:27
 entering extended mode
 **./Project-Sigma-ALG.tex
 (Project-Sigma-ALG.tex
@@ -1102,16 +1102,19 @@ Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
 ut line 149.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
 line 151.
- [6] [7] (Project-Sigma-ALG.aux)
+ [6]
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 170.
+ [7] (Project-Sigma-ALG.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG.out' has not changed.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23885 strings out of 481267
- 454846 string characters out of 2906339
+ 23894 strings out of 481267
+ 454971 string characters out of 2906339
  730993 words of memory out of 3000000
- 40568 multiletter control sequences out of 15000+200000
- 431819 words of font info for 105 fonts, out of 3000000 for 9000
+ 40569 multiletter control sequences out of 15000+200000
+ 433779 words of font info for 109 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  128i,12n,130p,1812b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
@@ -1128,9 +1131,9 @@ all/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Supp
 ort/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Li
 brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on Project-Sigma-ALG.pdf (7 pages, 123176 bytes).
+Output written on Project-Sigma-ALG.pdf (7 pages, 127152 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
