@@ -1240,35 +1240,38 @@ INPUT ./Project-Sigma-ALG.toc
 INPUT Project-Sigma-ALG.toc
 INPUT Project-Sigma-ALG.toc
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplr7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7t.tfm
 OUTPUT Project-Sigma-ALG.toc
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/palatino/pplb7t.vf
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/palatino/pplb7t.vf
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplr7t.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplr7t.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb7t.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplri7t.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/palatino/pplb7t.vf
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
@@ -1302,6 +1305,19 @@ INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/p
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueus.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueus.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueus.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/ueus.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/euler/eusm10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/euler/eusm10.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/euler/eusm7.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ppl.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ppl.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ppl.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ppl.fd
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplr8c.tfm
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/palatino/pplr8c.vf
 INPUT Project-Sigma-ALG.aux
 INPUT ./Project-Sigma-ALG.out
 INPUT ./Project-Sigma-ALG.out
@@ -1314,6 +1330,8 @@ INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/euler/eusm10.pfb
+INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/euler/eusm10.pfb
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/mathpazo/fplmri.pfb
