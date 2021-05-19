@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1621415943 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1621416291
+["pdflatex"] 1621440778 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1621441165
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1615737732 6309110 07cd7117665a88a3b6003c3369adf3f8 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1616223517 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc" 1615738380 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -211,13 +211,13 @@
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/varwidth/varwidth.sty" 1615738156 10894 d359a13923460b2a73d4312d613554c8 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1615738246 57049 74963e80d77be39a0b7442967b27c75b ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1615738087 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "Project-Sigma-ALG.aux" 1621415944 4383 94e58863d072ec9db143e787a831c1f2 "pdflatex"
-  "Project-Sigma-ALG.out" 1621415944 615 12e0d0f8b9c696027ff9a52b41ea37d8 "pdflatex"
-  "Project-Sigma-ALG.tex" 1621415942 18901 6f2f0a193e8a4048ebf928c080920e0e ""
-  "Project-Sigma-ALG.toc" 1621415944 312 b69542bef3e9bd0d441a8803bc9d80db "pdflatex"
+  "Project-Sigma-ALG.aux" 1621440779 4818 8be0e62859eb8f2fc78e2a4b3ab2c393 "pdflatex"
+  "Project-Sigma-ALG.out" 1621440779 615 12e0d0f8b9c696027ff9a52b41ea37d8 "pdflatex"
+  "Project-Sigma-ALG.tex" 1621440777 21557 2bcef79d814e1e4554e6a2b93e90f96c ""
+  "Project-Sigma-ALG.toc" 1621440779 312 b69542bef3e9bd0d441a8803bc9d80db "pdflatex"
   (generated)
-  "Project-Sigma-ALG.log"
   "Project-Sigma-ALG.out"
   "Project-Sigma-ALG.toc"
-  "Project-Sigma-ALG.pdf"
   "Project-Sigma-ALG.aux"
+  "Project-Sigma-ALG.pdf"
+  "Project-Sigma-ALG.log"

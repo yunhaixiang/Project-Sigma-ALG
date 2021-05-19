@@ -193,10 +193,29 @@ We claim that if $F\in k[X,Y]$ is irreducible and $\mathcal{V}((F))$ is infinite
 		commutes, in other words, $\mathrm{Res}^W_U=\mathrm{Res}^V_U\circ \mathrm{Res}^W_V$
 	\end{itemize}
 \end{enumerate}
+Moreover, suppose that $\mathscr{F},\mathscr{G}$ are presheaves of sets on $X$, then a morphism $\phi:\mathscr{F}\rightarrow\mathscr{G}$ is the data of a map $\phi(U):\mathscr{F}(U)\rightarrow\mathscr{G}(U)$ for each open $U\subseteq X$ such that the diagram
+\[
+\begin{tikzcd}[sep = huge]
+\mathscr{F}(V) \arrow[r, "\phi(V)"] \arrow[d, "\mathrm{Res}^V_U"'] & \mathscr{G}(V) \arrow[d, "\mathrm{Res}^V_U"] \\
+\mathscr{F}(U) \arrow[r, "\phi(U)"]                 & \mathscr{G}(U)               
+\end{tikzcd}\]
+commutes whenever $U\hookrightarrow V$ is an inclusion of open sets (where we abuse the notation $\mathrm{Res}^V_U$).
 \end{definition}
 In fact, we can see that a presheaf of sets on a topological space is exactly the same information of a contravariant functor from the category of open sets of $X$, which is the category consisting of all open sets of $X$ as objects and inclusions as morphisms, to the category of sets. 
 \begin{definitionbox}
 Let $\mathcal{C},\mathcal{D}$ be categories where $\mathcal{C}$ is small, then a $\mathcal{D}$-valued presheaf on $\mathcal{C}$ is a functor $\mathcal{C}^{\mathrm{op}}\rightarrow\mathcal{D}$, and the category of $\mathcal{D}$-valued presheaf on $\mathcal{C}$ is the functor category $[\mathcal{C}^{\mathrm{op}},\mathcal{D}]$.
 \end{definitionbox}
-Hence, a presheaf of sets on a topological space $X$ is simply a $\mathbf{Set}$-valued presheaf on the category of open sets of $X$. Similarly, a presheaf of rings on $X$ is a $\mathbf{Ring}$-valued presheaf on the category of open sets of $X$. Many examples of presheaves come from different classes of functions with canonical restrictions of maps, for example, we can define $\mathscr{F}(U)=\mathscr{C}^0(U)$ as the class of continuous real-valued functions. Another example is the 
+
+Many examples of presheaves come from different classes of functions (with the obvious restriction map). For example, we can define $\mathscr{F}(U)=\mathscr{C}^0(U)$ as the set of continuous real-valued functions on $U$, or we can define $\mathscr{F}(U)=\mathscr{B}(U)$ as the set of complex-valued functions on $U$ that are bounded. There is also the \textit{constant presheaf} associated with a set $S$ where $\mathscr{F}(U)=S$ for all open $U\subseteq X$, and the retriction map is the identity map on $S$.
+\begin{definition}Let $\mathscr{F}$ be a presheaf on a topological space $X$, then we define the \textit{stalk} $\mathscr{F}_p$ of $\mathscr{F}$ at a point $p\in X$, whose elements are called \textit{germs} of $\mathscr{F}$ at $p$, as
+\[\mathscr{F}_p=\left.\left\{(f,U):\begin{array}{c}f\in\mathscr{F}(U),\textrm{\ and\ }U\subseteq X\textrm{\ is}\\\textrm{an\ open\ neighborhood\ of\ }p\end{array}\right\} \middle/ \left\{\begin{array}{c}(f,U)\sim (g,V)\textrm{\ if\ and\ only\ if\ exists\ }\\W\subseteq U\cap V\textrm{\ such\ that\ }\mathrm{Res}^U_Wf=\mathrm{Res}^V_Wg\end{array}\right\}\right.\]
+In other words, $\mathscr{F}_p$ is the colimit $\displaystyle\lim_{\longrightarrow}\mathscr{F}(U)$ indexed over open neighborhoods $U$ of $p$ with inclusion.
+\end{definition}
+Moreover, in many cases like the examples mentioned above where $\mathscr{F}(U)$ is a set of functions, we can define a ring structure on the stalk $\mathscr{F}_p$ by defining $[(f,U)]+[(g,V)]=[(f+g,U\cap V)]$ and $[(f,U)][(g,V)]=[(fg,U\cap V)]$. We can check that this is well-defined. Hence, in many situations, we will consider $\mathscr{F}_p$ as a ring (which is an abuse of notation). Stalks capture the local properties of a (pre)sheaf, which we will elaborate later.
+\begin{definition}A presheaf $\mathscr{F}$ on a topological space $X$ is a \textit{sheaf} if for any open set $U\subseteq X$ and any open cover $\{U_i\}_{i\in\mathcal{I}}$ of $U$ the following two axioms are satisfied:
+\begin{enumerate}[label=(\roman*)]
+	\item \textit{identity axiom}: if $f,g\in\mathscr{F}(U)$, then $\mathrm{Res}^U_{U_i}f=\mathrm{Res}^U_{U_i}g$ for all $i\in\mathcal{I}$ implies that $f=g$, and
+	\item \textit{gluability axiom}: if $f_i\in \mathscr{F}(U_i)$ for all $i\in\mathcal{I}$ is such that $\mathrm{Res}^{U_i}_{U_i\cap U_j}f_i=\mathrm{Res}^{U_j}_{U_i\cap U_j}f_j$ for all $i,j\in\mathcal{I}$, then there exists some $f\in\mathscr{F}(U)$ such that $\mathrm{Res}^U_{U_i}f=f_i$ for all $i\in\mathcal{I}$.
+\end{enumerate}
+\end{definition}
 \end{document}

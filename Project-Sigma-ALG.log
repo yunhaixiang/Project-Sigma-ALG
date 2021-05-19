@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  19 MAY 2021 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  20 MAY 2021 00:12
 entering extended mode
 **./Project-Sigma-ALG.tex
 (Project-Sigma-ALG.tex
@@ -1123,16 +1123,16 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 (/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnf
 ss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [9] (Project-Sigma-ALG.aux)
+) [9] [10] (Project-Sigma-ALG.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG.out' has not changed.
 (rerunfilecheck)             Checksum: 12E0D0F8B9C696027FF9A52B41EA37D8;615.
  ) 
 Here is how much of TeX's memory you used:
- 24116 strings out of 481267
- 459935 string characters out of 2906339
+ 24170 strings out of 481267
+ 461194 string characters out of 2906339
  730999 words of memory out of 3000000
- 40770 multiletter control sequences out of 15000+200000
- 435681 words of font info for 115 fonts, out of 3000000 for 9000
+ 40816 multiletter control sequences out of 15000+200000
+ 435938 words of font info for 116 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  128i,15n,130p,1812b,1335s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
@@ -1150,9 +1150,9 @@ tion Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></Users/
 yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palati
 no/uplr8a.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Project-Sigma-ALG.pdf (9 pages, 139248 bytes).
+Output written on Project-Sigma-ALG.pdf (10 pages, 145657 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
