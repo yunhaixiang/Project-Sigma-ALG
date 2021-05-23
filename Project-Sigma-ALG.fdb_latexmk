@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1621440778 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1621441165
+["pdflatex"] 1621440778 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1621515975
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1615737732 6309110 07cd7117665a88a3b6003c3369adf3f8 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1616223517 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc" 1615738380 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -216,8 +216,8 @@
   "Project-Sigma-ALG.tex" 1621440777 21557 2bcef79d814e1e4554e6a2b93e90f96c ""
   "Project-Sigma-ALG.toc" 1621440779 312 b69542bef3e9bd0d441a8803bc9d80db "pdflatex"
   (generated)
-  "Project-Sigma-ALG.out"
-  "Project-Sigma-ALG.toc"
-  "Project-Sigma-ALG.aux"
-  "Project-Sigma-ALG.pdf"
   "Project-Sigma-ALG.log"
+  "Project-Sigma-ALG.out"
+  "Project-Sigma-ALG.aux"
+  "Project-Sigma-ALG.toc"
+  "Project-Sigma-ALG.pdf"
