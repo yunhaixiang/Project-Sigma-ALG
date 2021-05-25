@@ -137,20 +137,67 @@ We will show that $(Y-X^2)$ is prime. Consider $\varphi:\mathbf C[X,Y]\rightarro
 \begin{problem}
 Let $I=(Y^2-X^3-X^2,X)$, then $X\in I$ since it is a generator, hence $X^2,X^3\in I$ as well. Next, $Y^2-X^3-X^2\in I$ since it is a generator, therefore, $Y^2-X^3-X^2+X^3+X^2=Y^2\in I$. Assume for sake of contradiction that $I$ is a radical ideal, then $Y\in I$ since $Y^2\in I$. Since $Y\in I$, we have $Y=U(X,Y)(Y^2-X^3-X^2)+V(X,Y)X$ for some polynomials $U(X,Y),V(X,Y)$. Let $X=0$ on both sides, then we have $Y=U(0,Y)Y^2$ as polynomials in the indeterminant $Y$. This is a contradiction since the dergee of $Y$ on the LHS is $1$ and the degree of $Y$ on the RHS is not $1$. Since $I$ is not a radical ideal, and $\mathcal{I}(D)$ must be a radical ideal, we have $\mathcal{I}(D)\ne I$.
 \end{problem}
-\begin{problem}Let $I$ be a proper ideal of the commutative ring $R$, and let $\pi:R\rightarrow R/I$ be the natural homomorphism. 
-\begin{enumerate}[label=(\alph*)]
-	\item For every ideal $J^\prime$ of $R/I$, show that $J=\pi^{-1}[J^\prime]$ is an ideal of $R$ containing $I$, and for every ideal containing $I$, the set $J^\prime=\pi(J)$ is an ideal of $R/I$
-	\item Show that $J^\prime$ is a radical/prime/maximal ideal iff $J$ is.
-	\item Show that $J^\prime$ is finitely generated if $J$ is. Conclude that $R/I$ is noetherian if $R$ is, and that every ring of the form $\mathbf C[X_1,\dots,X_n]/I$ is noetherian.
-\end{enumerate}
-\begin{proof}~\\
-\begin{enumerate}[label=(\alph*)]
-	\item Let $J^\prime$ be an ideal of $R/I$ and $J=\pi^{-1}[J^\prime]$. If $a\in I$, then $\pi(a)=a+I=0+I\in J^\prime$ since $J^\prime$ is an ideal, hence $a\in J$. Thus $J$ contains $I$. Let $a,b\in J$, then $\pi(a),\pi(b)\in J^\prime$, so $\pi(a-b)=\pi(a)-\pi(b)\in J^\prime$, so $a-b\in J$ as well. Similarly, for $r\in R$ and $a\in J$, we have $\pi(a)\in J^\prime$, so $\pi(ra)=\pi(r)\pi(a)\in J^\prime$ since $J^\prime$ is an ideal, thus $ra\in J$. Hence $J$ is an ideal containing $I$. 
 
-	Now, let $J$ be an ideal of $R$ containing $I$, and let $J^\prime=\pi[J]$. Let $a,b\in J^\prime$, then $a=\pi(x)$ and $b=\pi(y)$ for some $x,y\in J$, thus $a-b=\pi(x)-\pi(y)=\pi(x-y)$. Since $J$ is an ideal, we have $x-y\in J$, so $a-b\in J^\prime$. Similarly, for $r^\prime=r+I\in R/I$ and for $a\in J^\prime$, we have $a=\pi(x)=x+I$ for some $x\in J$, so $r^\prime a=(r+I)(x+I)=rx+I=\pi(rx)$. Since $J$ is an ideal, we have $rx\in J$, so $r^\prime a\in J^\prime$. Hence $J^\prime$ is an ideal.
-	\item 
-	\item 
+\begin{problem}
+Show that $\mathcal{V}(F)\cong \mathcal{V}(G)$ where $F(X,Y)=X^2+Y^2-1$ and $G(X,Y)=X^2-Y^2-1$.
+\begin{proof}
+We let $\varphi:\mathcal{V}(F)\rightarrow \mathcal{V}(G)$ be $(x,y)\mapsto (x,iy)$ which is obviously a polynomial map with an inverse $\varphi^{-1}:\mathcal{V}(G)\rightarrow \mathcal{V}(F)$ given by $(x,y)\mapsto (x,-iy)$ which is also a polynomial map. We easily verify that $\varphi(\varphi^{-1}(x,y))=(x,y)$ and $\varphi^{-1}(\varphi(x,y))=(x,y)$. We note that if $(x,y)\in\mathcal{V}(F)$ then $x^2+y^2-1=0$, and we have $G(\varphi(x,y))=x^2-(iy)^2-1=x^2+y^2-1=0$. And if $(x,y)\in\mathcal{V}(G)$ then $x^2-y^2-1=0$ then $F(\varphi^{-1}(x,y))=x^2+(-iy)^2-1=x^2-y^2-1=0$. Therefore $\varphi,\varphi^{-1}$ are well-defined. Therefore $\mathcal{V}(F)\cong \mathcal{V}(G)$.
+\end{proof}
+\end{problem}
+
+\begin{problem}
+Let $V=\mathcal{V}(Y^2-X^3)$ and let $\phi:\mathbf{A}^1\rightarrow V$ be $\phi(t)=(t^2,t^3)$, show that $\phi$ is a bijective polynomial map which is not an isomorphism.
+\begin{proof}
+Assume $s\ne t$ and $(t^2,t^3)=(s^2,s^3)$ then we have $s^2=t^2$ and $s^3=t^3$. Since $s\ne t$ we have $s-t\ne 0$. Since $s^2=t^2$ we have $s^2-t^2=(s+t)(s-t)=0$. Since $s-t\ne 0$, we have $s+t=0$, thus $s=-t$, hence $s^3=(-t)^3=-t^3$. Since $s^3=t^3$ and $s^3=-t^3$, we have $t^3=-t^3$, so $t=0$. Since $t=0$ we have $s=-t=0=t$ which contradicts the hypothesis that $s\ne t$. This shows that $\phi$ is injective. 
+Next, for each $(x,y)\in\mathcal{V}(\{Y^2-X^3\})$, we have $y^2-x^3=0$ and thus $y^2=x^3$. We know that $x$ has square roots $\alpha$ and $-\alpha$ for some $\alpha$. We show that one of them is also a cube root of $y$. We have $\alpha^6=(\alpha^2)^3=x^3=y^2$, therefore $y=\alpha^3$ or $y=-\alpha^3$. Since $y=\alpha^3$ or $y=(-\alpha)^3$, we have one of $\pm\alpha$ is a cube root of $y$. Let $t=\alpha$ if $\alpha$ is a cube root of $y$ and $t=-\alpha$ otherwise. We then have $\phi(t)=(t^2,t^3)=(x,y)$. Thus $\phi$ is surjective, hence bijective. Suppose for contradiction that there is a polynomial map inverse $\phi^{-1}:V\rightarrow\mathbf A^1$ which can be represented by a polynomial $f\in\mathbf C[X,Y]$. Then have $\phi^{-1}(\phi(t))=t$, so $f(t^2,t^3)=t$. We note that $[t^1]f(t^2,t^3)=0$, since for each term $aX^nY^m$, substituding $X=t^2$ and $Y=t^3$ gives $at^{2n+3m}$, and there is no $n,m$ with $2n+3m=1$. This is a contradiction since $[t^1]t=1$.
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $\phi:\mathbf A^1\rightarrow V$ be $\phi(t)=(t^2-1,t(t^2-1))$ where $V=\mathcal{V}(\{Y^2-X^2(X+1)\})$. Show that $\phi$ is one-to-one and onto except at $\phi(\pm 1)=(0,0)$.
+\begin{proof}Suppose that $s\ne t$ and $(s^2-1,s(s^2-1))=(t^2-1,t(t^2-1))$, we then have $s^2-1=t^2-1$ thus $s^2-t^2=(s-t)(s+t)=0$. Since $s\ne t$, we have $s=-t$. Next, since $s(s^2-1)=t(t^2-1)$ we have $-t(t^2-1)=t(t^2-1)$. Thus $t=0$ or $t^2=1$. If $t=0$ then $s=-t=0=t$ which contradicts $s\ne t$, so $t^2=1$. Thus $t=\pm 1$ and $s=\mp 1$. Thus $\phi$ is injective except at $t=\pm 1$. Next, let $(x,y)\in V$ then $y^2-x^2(x+1)=0$ so $y^2=x^2(x+1)$. Let $\alpha$ and $-\alpha$ be the square roots of $x+1$. By $y^2=x^2(x+1)$, we have $y=\alpha x$ or $y=-\alpha x$. Let $t=\alpha$ if $y=\alpha x$ and $t=-\alpha$ otherwise. We thus have $y=tx$. Since $t$ is a square root of $x+1$, we have $t^2=x+1$, so $x=t^2-1$. Thus $x=t^2-1$ and $y=t(t^2-1)$. Hence $\phi(t)=(x,y)$. Thus $\phi$ is surjective.
+\end{proof}
+\end{problem}
+\newpage
+\begin{problem}
+Let $V=\mathcal{V}(\{X^2-Y^3,Y^2-Z^3\})$, and let $\overline{\alpha}:\Gamma (V)\rightarrow \mathbf C[T]$ be given by $\overline{\alpha}(X)=T^9$, $\overline{\alpha}(Y)=T^6$ and $\overline{\alpha}(Z)=T^6$. Then
+\begin{enumerate}[label=(\alph*)]
+	\item What is the polynomial map $f:\mathbf A^1\rightarrow V$ with $f^*=\overline{\alpha}$
+	\item Show that $f$ is bijective but not an isomorphism
 \end{enumerate}
+\begin{proof}~\\[-1em]
+\begin{enumerate}[label=(\alph*)]
+	\item Define the polynomial map $f:\mathbf A^1\rightarrow V$ by $f(t)=(t^9,t^6,t^4)$ as in the proof of Theorem 1.6. We can verify that this is well-defined since $X^2-Y^3=t^{18}-t^{18}=0$ and $Y^2-Z^3=t^{12}-t^{12}=0$. We verify that the pullback $f^*(X)=[(x,y,z)\mapsto x]\circ f=T^9$, $f^*(Y)=[(x,y,z)\mapsto y]\circ f=T^6$, and $f^*(Z)=[(x,y,z)\mapsto z]\circ f=T^4$. Thus $f^*=\overline{\alpha}$.
+	\item We note that $f(t)=(0,0,0)$ iff $t=0$, so we can assume $t\ne s$ are nonzero and $(t^9,t^6,t^4)=(s^9,s^6,s^4)$. Since $t^4=s^4$, we have $t\in \{ s\zeta_4, s\zeta_4^2,s \zeta_4^3\}$. Since $t^6=s^6$, we have $t\in \{ s\zeta_6, \dots, s \zeta_6^5\}$. Since $t^9=s^9$, we have $t\in \{ s\zeta_9, \dots,s\zeta_9^8\}$. Since $\gcd(9,6,4)=1$, this is a contradiction. To explain in simpler language, $t^4=s^4$ implies that the angle between $t,s$ is $90^\circ,180^\circ$ or $270^\circ$; $t^6=s^6$ implies that the angle between $t,s$ is $60^\circ,120^\circ,180^\circ,240^\circ$ or $300^\circ$; $t^9=s^9$ implies that the angle between $t,s$ is $40^\circ,80^\circ,120^\circ,160^\circ,200^\circ,240^\circ,280^\circ$ or $320^\circ$. There is no angle between $t,s$ that satisfies our requirement. Thus $f$ is injective. Next, let $(x,y,z)\in V$, we then have $x^2-y^3=0$ and $y^2-z^3=0$, thus $x^2=y^3$ and $y^2=z^3$. The $6$-th roots of $y$ are $\{\alpha,\alpha\omega,\dots,\alpha\omega^5\}$ for some $\alpha$ where $\omega=e^{\frac{2\pi i}{6}}$. Let $s$ be a $6$-th roots of $y$. Thus $s^{18}=(s^{6})^3=y^3=x^2$, so $x=\pm s^{9}$, so $x\in \{s^9,s^9\omega^3\}$. Similarly, $s^{12}=(s^6)^2=y^2=z^3$, therefore $\{z,z\omega^2,z\omega^4\}=\{s^4,s^4\omega^2,s^4\omega^4\}$, hence $z\in \{s^4,s^4\omega^2,s^4\omega^4\}$. Suppose that $x=s^9\omega^{3n}$ for $n\in\{0,1\}$ and $z=s^4\omega^{2m}$ for $m\in\{0,1,2\}$. Let $t=s\omega^{k}$ then $t$ is also a $6$-th root of unity, so $y=t^6$. Also, $x=t^9\omega^{3n-9k}$ and $z=t^4\omega^{2m-4k}$. I claim that we can always choose $k$ such that $3n\equiv 9k\pmod{6}$ and $2m\equiv 4k\pmod{6}$. Note that $3n\equiv 9k\pmod{6}$ iff $k\equiv n\pmod{2}$, and note that $2m\equiv 4k\pmod{6}$ iff $k\equiv 2m\pmod{3}$. By the Chinese remainder theorem, such $k$ can always be chosen. Hence we have $x=t^9$, $y=t^6$ and $z=t^4$. Thus $f(t)=(x,y,z)$. Thus $f$ is surjective, so $f$ is bijective. 
+
+	We see that $f$ is not an isomorphism, since if so there is a polynomial map $g:V\rightarrow\mathbf A^1$ which can be viewed as a polynomial $g\in \mathbf C[X,Y,Z]$ which is the inverse of $f$, then by $g\circ f=\mathrm{id}$, we have $g(t^9,t^6,t^4)=t$. We note that $[t^1]g(t^9,t^6,t^4)=0$ since if $aX^pY^qZ^r$ is a term in $g(X,Y,Z)$, then substituding $X=t^9,Y=t^6,Z=t^4$ gives $at^{9p+6q+4r}$, and there is no $p,q,r$ such that $9p+6q+4r=1$. This contradicts the fact that $[t^1]t=1$.
+\end{enumerate}
+\end{proof}
+\end{problem}
+\begin{problem}
+If $\phi:V\subseteq\mathbf A^n\rightarrow W \subseteq\mathbf A^m$ is an onto polynomial map, show that if $X$ is an algebraic subset of $W$ then $\phi^{-1}[X]$ is an algebraic subset of $V$, and that $X$ is irreducible if $\phi^{-1}[X]$ is irreducible.
+\begin{proof}
+Suppose that $X=\mathcal{V}(I)$ for some $I\subseteq \mathbf C[X_1,\dots,X_m]$, then for $x\in V$, we have
+\[
+x\in \phi^{-1}[X]\Longleftrightarrow \phi(x)\in X\\
+\Longleftrightarrow f(\phi(x))=0,\,\forall f\in I\\
+\Longleftrightarrow x\in \mathcal{V}(\{f\circ \phi:f\in I\})
+\]
+Therefore $\phi^{-1}[X]=\mathcal{V}(\{f\circ \phi:f\in I\})$ is algebraic. If $X=U\cup V$ where algebraic sets $U,V\subset X$ properly, then $\phi^{-1}[X]=\phi^{-1}[U]\cup\phi^{-1}[V]$. Choose $p\in X\setminus U$, and let $x$ be such that $\phi(x)=p$, then $x\in \phi^{-1}[X]\setminus \phi^{-1}[U]$, so $\phi^{-1}[U]\subset \phi^{-1}[X]$ properly, and similarly $\phi^{-1}[V]\subset \phi^{-1}[X]$ properly. Since $\phi^{-1}[U],\phi^{-1}[V]$ are algebraic as $U,V$ are algebraic, we have $\phi^{-1}[X]$ is reducible. Thus $\phi^{-1}[X]$ is irreducible implies $X$ is irreducible.
+\end{proof}
+\end{problem}
+\newpage
+
+\begin{problem}
+Let $V\subseteq\mathbf A^n$ be a variety, show that TFAE
+\begin{enumerate}[label=(\roman*)]
+	\item $V$ is a point
+	\item $\Gamma(V)=\mathbf C$
+	\item $\dim_{\mathbf C}\Gamma(V)$ is finite
+\end{enumerate}
+\begin{proof}
+Assume (i), then let $V=\{(x_1,\dots,x_n)\}$. We claim that $\mathcal{I}(V)=(X_1-x_1,\dots,X_n-x_n)$. Note that $\mathcal{V}((X_1-x_1,\dots,X_n-x_n))=V$ which is straightforward. Next, since $x_1,\dots,x_n\in \mathbf C$, we have
+\[\mathbf C[X_1,\dots,X_n]/(X_1-x_1,\dots,X_n-x_n)\cong \mathbf C[x_1,\dots,x_n]\cong\mathbf C\]
+which is an integral domain, so $(X_1-x_1,\dots,X_n-x_n)$ is prime, so it's also a radical ideal. Therefore we have $\mathcal{I}(V)=\mathcal{I}(\mathcal{V}((X_1-x_1,\dots,X_n-x_n)))=(X_1-x_1,\dots,X_n-x_n)$ by Nullstellensatz. Thus, we indeed have $\Gamma(V)=\mathbf C[X_1,\dots,X_n]/\mathcal{I}(V)=\mathbf C$. Next, assume (ii), then $\dim_{\mathbf C} \Gamma(V)=\dim_{\mathbf C}\mathbf C=1<\infty$ straightforwardly. Assume (iii), then $\Gamma(V)=\mathbf C[X_1,\dots,X_n]/\mathcal{I}(V)$ has finite dimension over $\mathbf C$. Let $i\in\{1,\dots,n\}$. We note that if $\{1,X_i,X_i^2,X_i^3,\dots\}$ is linearly independent then we cannot have $\dim_{\mathbf C}\Gamma(V)<\infty$, thus they are linearly dependent. This means that there exists some polynomial $f_i\in\mathbf C[X_i]\subseteq \mathbf C[X_1,\dots,X_n]$ with coefficients not all zero for which $f_i(X_i)\equiv 0 \pmod{\mathcal{I}(V)}$. Hence $f_i\in\mathcal{I}(V)$ for each $i$. By Hilbert's Nullstellensatz, we have $\mathcal{V}(\mathcal{I}(V))=V$ as $V$ is an algebraic set. Thus for each $p\in V$, we have $p\in\mathcal{V}(\mathcal{I}(V))$, so $f_i(p)=0$ for each $i$. The fact that each $f_i$ is a single-variable polynomial over $\mathbf C$ means that it has finitely many roots. Therefore we only have finitely many choices for each coordinate of $p$. Thus $V$ is a finite set. Since $V$ is a variety, it is irreducible, therefore it must be a single point. 
 \end{proof}
 \end{problem}
 \end{document}
