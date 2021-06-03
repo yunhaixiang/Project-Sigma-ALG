@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  25 MAY 2021 07:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  3 JUN 2021 13:56
 entering extended mode
 **./Project-Sigma-ALG-Exercise.tex
 (Project-Sigma-ALG-Exercise.tex
@@ -1105,34 +1105,69 @@ plm/m/it/10.95 X[] \OMS/zplm/m/n/10.95   \OML/zplm/m/it/10.95 x[]\OT1/ppl/m/n/1
 ideal. Therefore
  []
 
-[8] (Project-Sigma-ALG-Exercise.aux)
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Overfull \hbox (2.80974pt too wide) in paragraph at lines 254--255
+[]\OT1/ppl/m/n/10.95 First, we claim that $\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/
+10.95 Y[] \OMS/zplm/m/n/10.95   \OML/zplm/m/it/10.95 X[]\OT1/zplm/m/n/10.95 )$ 
+\OT1/ppl/m/n/10.95 is a prime ideal in $\OT1/zplm/b/n/10.95 C\OT1/zplm/m/n/10.9
+5 [\OML/zplm/m/it/10.95 X\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 Y\OT1/zplm/m
+/n/10.95 ]$\OT1/ppl/m/n/10.95 . We claim that $\OML/zplm/m/it/10.95 Y[] \OMS/zp
+lm/m/n/10.95   \OML/zplm/m/it/10.95 X[]$ \OT1/ppl/m/n/10.95 is irreducible.
+ []
+
+
+Overfull \hbox (9.37462pt too wide) in paragraph at lines 254--255
+\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 f[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/i
+t/10.95 X\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 g[]\OT1/zplm/m/n/10.95 (\OML
+/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) + \OML/zplm/m/it/10.95 g[]\OT1/zplm/m/n
+/10.95 (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 f[]\OT1
+/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 ))\OML/zplm/m/it/10.
+95 Y \OT1/zplm/m/n/10.95 + \OML/zplm/m/it/10.95 f[]\OT1/zplm/m/n/10.95 (\OML/zp
+lm/m/it/10.95 X\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 g[]\OT1/zplm/m/n/10.95
+ (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 Y[]$\OT1/ppl/
+m/n/10.95 . Thus $\OML/zplm/m/it/10.95 f[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/1
+0.95 X\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 g[]\OT1/zplm/m/n/10.95 (\OML/zp
+lm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) = \OMS/zplm/m/n/10.95  \OML/zplm/m/it/10.9
+5 X[]$ \OT1/ppl/m/n/10.95 and we have $\OML/zplm/m/it/10.95 f[]\OT1/zplm/m/n/10
+.95 (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 g[]\OT1/zp
+lm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) =
+ []
+
+[9] [10] (Project-Sigma-ALG-Exercise.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG-Exercise.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23889 strings out of 481267
- 454966 string characters out of 2906339
- 732049 words of memory out of 3000000
+ 23916 strings out of 481267
+ 455301 string characters out of 2906339
+ 735052 words of memory out of 3000000
  40558 multiletter control sequences out of 15000+200000
- 434269 words of font info for 109 fonts, out of 3000000 for 9000
+ 435182 words of font info for 113 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 128i,11n,130p,1982b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,11n,130p,1982b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/base/8r.enc}</Users/yunhai/Library/Application Support/MiKTeX/texmfs/instal
-l/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/yunhai/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/
-yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/in
-stall/fonts/type1/public/mathpazo/fplmr.pfb></Users/yunhai/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/mathpazo/fplmri.pfb></Users/yu
-nhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino
-/uplb8a.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fo
-nts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Library/Application Support/Mi
-KTeX/texmfs/install/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Project-Sigma-ALG-Exercise.pdf (8 pages, 122153 bytes).
+l/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/yunhai/Library/Application 
+Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users
+/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/yunhai/Library/Applicat
+ion Support/MiKTeX/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></Users
+/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ma
+thpazo/fplmri.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/inst
+all/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Supp
+ort/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplri8
+a.pfb>
+Output written on Project-Sigma-ALG-Exercise.pdf (10 pages, 145105 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -200,4 +200,68 @@ Assume (i), then let $V=\{(x_1,\dots,x_n)\}$. We claim that $\mathcal{I}(V)=(X_1
 which is an integral domain, so $(X_1-x_1,\dots,X_n-x_n)$ is prime, so it's also a radical ideal. Therefore we have $\mathcal{I}(V)=\mathcal{I}(\mathcal{V}((X_1-x_1,\dots,X_n-x_n)))=(X_1-x_1,\dots,X_n-x_n)$ by Nullstellensatz. Thus, we indeed have $\Gamma(V)=\mathbf C[X_1,\dots,X_n]/\mathcal{I}(V)=\mathbf C$. Next, assume (ii), then $\dim_{\mathbf C} \Gamma(V)=\dim_{\mathbf C}\mathbf C=1<\infty$ straightforwardly. Assume (iii), then $\Gamma(V)=\mathbf C[X_1,\dots,X_n]/\mathcal{I}(V)$ has finite dimension over $\mathbf C$. Let $i\in\{1,\dots,n\}$. We note that if $\{1,X_i,X_i^2,X_i^3,\dots\}$ is linearly independent then we cannot have $\dim_{\mathbf C}\Gamma(V)<\infty$, thus they are linearly dependent. This means that there exists some polynomial $f_i\in\mathbf C[X_i]\subseteq \mathbf C[X_1,\dots,X_n]$ with coefficients not all zero for which $f_i(X_i)\equiv 0 \pmod{\mathcal{I}(V)}$. Hence $f_i\in\mathcal{I}(V)$ for each $i$. By Hilbert's Nullstellensatz, we have $\mathcal{V}(\mathcal{I}(V))=V$ as $V$ is an algebraic set. Thus for each $p\in V$, we have $p\in\mathcal{V}(\mathcal{I}(V))$, so $f_i(p)=0$ for each $i$. The fact that each $f_i$ is a single-variable polynomial over $\mathbf C$ means that it has finitely many roots. Therefore we only have finitely many choices for each coordinate of $p$. Thus $V$ is a finite set. Since $V$ is a variety, it is irreducible, therefore it must be a single point. 
 \end{proof}
 \end{problem}
+\begin{problem}
+Decompose $\mathcal{V}(Y^4-X^2,Y^4-X^2Y^2+XY^2-X^3)$ into irreducible components. 
+\begin{proof}
+We note that $Y^4-X^2=(Y^2-X)(Y^2+X)$ and $Y^4-X^2Y^2+XY^2-X^3=(X+Y)(Y-X)(X+Y^2)$. We note that $X+Y^2$ and $Y^2-X$ are irreducible. Let $V=\mathcal{V}(Y^4-X^2,Y^4-X^2Y^2+XY^2-X^3)$ then
+\[\begin{aligned}V&=\mathcal{V}(Y^4-X^2)\cap \mathcal{V}(Y^4-X^2Y^2+XY^2-X^3)\\
+&=(\mathcal{V}(Y^2-X)\cup\mathcal{V}(Y^2+X))\cap (\mathcal{V}(X+Y)\cup\mathcal{V}(Y-X)\cup\mathcal{V}(X+Y^2))\\
+&=(\mathcal{V}(Y^2-X)\cap (\mathcal{V}(X+Y)\cup\mathcal{V}(Y-X)\cup\mathcal{V}(X+Y^2)))\cup \mathcal{V}(Y^2+X)
+\end{aligned}
+\]
+We note that if $(x,y)\in \mathcal{V}(Y^2-X)\cap \mathcal{V}(X+Y)$ then $x+y=0$ and $y^2-x=0$ so $y^2+y=0$, which implies that $(x,y)\in\{(0,0),(1,-1)\}$. If $(x,y)\in \mathcal{V}(Y^2-X)\cap \mathcal{V}(Y-X)$ then $y-x=0$ and $y^2-x=0$, which implies $x^2-x=0$ so $(x,y)\in \{(1,1),(0,0)\}$. If $(x,y)\in \mathcal{V}(Y^2-X)\cap\mathcal{V}(X+Y^2)$ then $y^2-x=0$ and $x+y^2=0$ so $2y^2=0$ so $(x,y)=(0,0)$. Therefore
+\[\begin{aligned}V&=\{(0,0),(1,-1)\}\cup\{(1,1),(0,0)\}\cup \{(0,0)\}\cup\mathcal{V}(Y^2+X)\\
+&=\mathcal{V}(X,Y)\cup\mathcal{V}(X-1,Y+1)\cup\mathcal{V}(X-1,Y-1)\cup\mathcal{V}(Y^2+X)
+\end{aligned}\]
+The first three components are irreducible since they are single points. The last component $\mathcal{V}(Y^2+X)$ is irreducible since $(Y^2+X)$ is prime, and hence also radical, so $\mathcal{I}(\mathcal{V}(Y^2+X))=(Y^2+X)$ which is prime. %To see that $(Y^2+X)$ is prime, we note that $\varphi:\mathbf C[X,Y]\rightarrow \mathbf C[T]$ by $X\mapsto -T^2$ and $Y\mapsto T$ induces an isomorphism $\mathbf C[X,Y]/(Y^2+X)\cong \mathbf C[X,Y]/\mathrm{Ker}(\varphi)\cong \mathrm{Im}(\varphi)\cong\mathbf C[T]$ which is an integral domain. 
+We note that $(Y^2+X)$ is prime since $Y^2+X$ is prime, and $Y^2+X$ is prime since $Y^2+X$ is irreducible and $\mathbf C[X,Y]$ is a ufd.
+\end{proof}
+\end{problem}
+\newpage
+\begin{problem}
+Find all irreducible components of $\mathcal{V}(2X^3-X^2Y-2XY+Y^2)$.
+\begin{proof}
+We note that if $(x,y)\in\mathcal{V}(2X^3-X^2Y-2XY+Y^2)$, then $2x^3-(x^2+2x)y+y^2=0$, so $y=\frac{x^2+2x\pm\sqrt{(x^2+2x)^2-8x^3}}{2}=\frac{x(x+2)\pm x(x-2)}{2}$. Therefore $y=x^2$ or $y=2x$. Conversely, if $y=2x$, then $2x^3-x^2y-2xy+y^2=2x^3-2x^3-4x^2+4x^2=0$. If $y=x^2$ then $2x^3-x^2y-2xy+y^2=2x^3-x^4-2x^3+x^4=0$. Therefore we have $\mathcal{V}(2X^3-X^2Y-2XY+Y^2)=\mathcal{V}(Y-2X)\cup\mathcal{V}(Y-X^2)$. We note that $\mathcal{V}(Y-X^2)$ is irreducible by a previous assignment. Also $\mathcal{V}(Y-2X)$ is irreducible since $(Y-2X)$ is prime and hence also radical so by Nullstellensatz we have $\mathcal{I}(\mathcal{V}(Y-2X))=(Y-2X)$ which is prime. %To see that $(Y-2X)$ is prime, we note that $\varphi:\mathbf C[X,Y]\rightarrow \mathbf C[T]$ by $X\mapsto T$ and $Y\mapsto 2T$ induces an isomorphism $\mathbf C[X,Y]/(Y-2X)\cong \mathbf C[X,Y]/\mathrm{Ker}(\varphi)\cong \mathrm{Im}(\varphi)\cong\mathbf C[T]$ which is an integral domain.
+We note that $(Y-2X)$ is prime since $Y-2X$ is prime, and $Y-2X$ is prime since $Y-2X$ is irreducible and $\mathbf C[X,Y]$ is a ufd.
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $V=\mathcal{V}(Y^2-X^2(X+1))$ and $z=Y/X\in K (V)$, find the pole sets of $z$ and $z^2$.
+\begin{proof}
+First, we note that $z=Y/X=X(X+1)/Y$ since $Y^2\equiv X^2(X+1)\pmod{\mathcal{I}(V)}$. Thus if $x\ne 0$ then the expression $z=Y/X$ is defined, and if $y\ne 0$ then the expression $z=X(X+1)/Y$ is defined. Thus $z$ is defined for all $(x,y)\ne (0,0)$. For $(x,y)=(0,0)$, suppose that $z$ is defined then exists expression $r(X,Y)/s(X,Y)=X/Y$ with $s(0,0)\ne 0$. Since $s(0,0)\ne 0$, we know that $s(X,Y)$ has a nonzero constant term. Next, $Yr(X,Y)\equiv Xs(X,Y)\pmod{\mathcal I(V)}$ so $Yr(X,Y)- Xs(X,Y)=h(X,Y)(Y^2-X^2(X+1))$. Consider the coefficient of $X=X^1Y^0$ on both sides. For the LHS, since $s(X,Y)$ has a nonzero constant term, the coefficient of $X=X^1Y^0$ in $-Xs(X,Y)$ is $-1$. Since $Yr(X,Y)$ has $Y$ as a factor, the coefficient of $X=X^1Y^0$ in $Yr(X,Y)$ is $0$. Next, for the RHS. Since $Y^2h(X,Y)$ has $Y$ as a factor, coefficient of $X=X^1Y^0$ in $Y^2h(X,Y)$ is $0$. Since $-X^2(X+1)h(X,Y)=-X^3h(X,Y)-X^2h(X,Y)$, we have the coefficient of $X=X^1Y^0$ in $-X^2(X+1)h(X,Y)$ is $0$. Thus the coefficient of $X=X^1Y^0$ in the LHS is $-1$ but it is $0$ in the RHS, contradiction. Next, we note that $z^2=Y^2/X^2=(X+1)$ since $Y^2\equiv X^2(X+1)\pmod{\mathcal{I}(V)}$. The denominator of $X+1$ is $1$, so $z^2$ is defined on all points in $V$. Hence $z$ has pole at $(0,0)$ only and $z^2$ has no pole.
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $F(X,Y)=Y^2-X^3+X$, $W=\mathcal{V}(F)$ and $P=(0,0)$.
+\begin{enumerate}[label=(\alph*)]
+	\item Show that $aX+bY$ is an element of the maximal ideal $\mathcal{M}_P(W)$ of the local ring $\mathcal{O}_P(W)$,
+	\item Show that $aX+bY$ is an element of $\mathcal{M}_P(W)^2$ iff $aX+bY$ is tangent to $W$ at $P$.
+\end{enumerate}
+\begin{proof}~\\[-1em]
+\begin{enumerate}[label=(\alph*)]
+\item We recall that
+\[\mathcal{M}_{P}(W)=\left\{f \in K(W) \mid f=\frac{r}{s} \text { for } r(P)=0, s(P) \neq 0\right\}\]
+and in this case where $P=(0,0)$, the denominator of $aX+bY$ is always $1$ which is nonzero and when $(x,y)=(0,0)$ the numerator is $a0+b0=0$. Thus $aX+bY\in \mathcal{M}_{P}(W)$. 
+\item
+We note that the line $aX+bY$ is tangent to $W$ at $P$ iff their intersection $\mathcal{V}(aX+bY)\cap W=\{P\}$. We also note that $\mathcal{M}_P(W)=\mathcal{I}(P)\mathcal{O}_P(W)$. Since $\mathcal{I}(P)=(X,Y)$, we have $\mathcal{I}(P)^2=(X^2,XY,YX,Y^2)=(X^2,XY,Y^2)$. We note that $\mathcal{I}(P)=\mathcal{I}(\mathcal{V}(aX+bY))\cup\mathcal{I}(W)$.
+\end{enumerate}
+\end{proof}
+\end{problem}
+\begin{problem}Let $W=\mathcal{V}(Y^2-X^2(X+1))$, and $P=(0,0)$, show that for each $a,b\in\mathbf C$, $aX+bY$ not an element of $\mathcal{M}_P(W)^2$ unless $a=b=0$.
+\end{problem}
+\begin{problem}Let $C=\mathcal{V}(Y^2-X^3)$, show that the function field $K(C)$ of $C$ is isomorphic to $\mathbf C(T)$ but $\Gamma(C)$ is not isomorphic to $\mathbf C[T]$.
+\begin{proof}
+First, we claim that $(Y^2-X^3)$ is a prime ideal in $\mathbf C[X,Y]$. We claim that $Y^2-X^3$ is irreducible. We note that if $Y^2-X^3=f(X,Y)g(X,Y)$ then the degree of $Y$ in $f(X,Y),g(X,Y)$ are $1$. If $f(X,Y)=f_0(X)+f_1(X)Y$ and $g(X,Y)=g_0(X)+g_1(X)Y$ then $f(X,Y)g(X,Y)=f_0(X)g_0(X)+(f_0(X)g_1(X)+g_0(X)f_1(X))Y+f_1(X)g_1(X)Y^2$. Thus $f_0(X)g_0(X)=-X^3$ and we have $f_0(X)g_1(X)=g_0(X)f_1(X)$ and $f_1(X)g_1(X)=1$. By $f_1(X)g_1(X)=1$, we have $f_1,g_1$ are nonzero constants, thus by $f_0(X)g_1(X)=g_0(X)f_1(X)$, we have $f_0(X)=cg_0(X)$ for a nonzero constant $c$. Thus $f_0(X)g_0(X)=cg_0(X)^2$ which has a even degree, but $f_0(X)g_0(X)=-X^3$ which has odd degree, contradiction. Since $Y^2-X^3$ is irreducible, it is a prime as $\mathbf C[X,Y]$ is a ufd. Thus $(Y^2-X^3)$ is a prime ideal. Hence $\Gamma(C)=\mathbf C[X,Y]/(Y^2-X^3)$ by Nullstellensatz. We claim that $\Gamma(C)$ is not isomorphic to $\mathbf C[T]$. We note that $\mathbf C[T]$ is integrally closed since it is a ufd. However $\Gamma(C)\cong \mathbf C[\alpha^2,\alpha^3]$ a trancedental extension of $\mathbf C$ where $\alpha$ is not a root of any polynomial. Therefore $\Gamma(C)$ is not integrally closed, so it is not isomorphic to $\mathbf C[T]$. On the other hand, the field of fraction of $\mathbf C[\alpha^2,\alpha^3]$, which is $K(C)$, is isomorphic to $\mathbf C(T)$ as we can set $T=\alpha=\alpha^3/\alpha^2$
+\end{proof}
+\end{problem}
+\begin{problem}Let $V=\mathcal{V}(Y-X^2)$ and $P=(1,1)$, which of the three rational functions are equal in $\mathcal{O}_P(V)$?
+\begin{enumerate}
+	\item $F_1(X,Y)=\frac{1}{X+1}$,
+	\item $F_2(X,Y)=\frac{X}{X+Y}$,
+	\item $F_3(X,Y)=\frac{X^2}{X+Y^2}$.
+\end{enumerate}
+\begin{proof}
+
+\end{proof}
+\end{problem}
 \end{document}
