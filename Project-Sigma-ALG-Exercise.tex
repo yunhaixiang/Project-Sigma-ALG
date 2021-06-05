@@ -261,7 +261,26 @@ First, we claim that $(Y^2-X^3)$ is a prime ideal in $\mathbf C[X,Y]$. We claim 
 	\item $F_3(X,Y)=\frac{X^2}{X+Y^2}$.
 \end{enumerate}
 \begin{proof}
+First, we note that $F_1=F_2$ since $\frac{X}{X+Y}=\frac{X}{X+X^2}=\frac{1}{X+1}$. On the other hand, if $F_1=F_3$ then $\frac{1}{X+1}= \frac{X^2}{X+Y^2}$ so $X^2(X+1)\equiv X+Y^2\pmod{\mathcal{I}(V)}$. Therefore $X^3+X^2-X-Y^2\in \mathcal{I}(V)$. Therefore, we have $X^3+X^2-X-Y^2=h(X,Y)(Y-X^2)$ for some $h$. Considering both sides as polynomials of $Y$, since $Y$ has degree $2$ in the LHS and $Y$ has degree $1$ in $Y-X^2$, we have $Y$ has degree $1$ in $h(X,Y)$. Since the coefficient of $Y^2$ is $-1$ in the LHS, and the coefficient of $Y$ in $Y-X^2$ is $1$, we have $h(X,Y)=-Y+f(X)$ for some $f$. Next, we multiply out and get $(-Y+f(X))(Y-X^2)=-Y^2+(X^2+f(X))Y-X^2f(X)$. Since this is equal to $X^3+X^2-X-Y^2$, we have $X^2+f(X)=0$ so $f(X)=-X^2$. Thus $-X^2f(X)=X^4$. However, the coefficient of $Y^0$ in $X^3+X^2-X-Y^2$ is $X^3+X^2-X$, contradiction. Thus $F_1=F_2$ but $F_3$ is not equal to $F_1$ or $F_2$.
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $V\subseteq\mathbf A^n$ be a variety, and $\phi:\mathcal{O}_P(V)\rightarrow \mathbf C$ a $\mathbf C$-algebra homomorphism, then show that $\phi(f)=f(P)$ for all $f$.
+\begin{proof}
+First, for some $f(X_1,\dots,X_n)=\frac{p(X_1,\dots,X_n)}{q(X_1,\dots,X_n)}$, we note that $\phi(f)=\frac{\phi(p)}{\phi(q)}$. Next, for any $a\in\mathbf C$ and $k_1,\dots,k_n\in\mathbf N$ we have $\phi(aX_1^{k_1}\cdots X_n^{k_n})=a\phi(X_1)^{k_1}\cdots\phi(X_n)^{k_n}$. Since also $\phi(f+g)=\phi(f)+\phi(g)$, we have that $\phi$ is completely determined by $\phi(X_1),\dots,\phi(X_n)$. Assume that $\phi(X_i)\ne P_i$ where $P=(P_1,\dots,P_n)$, then $\frac{1}{X_i-P_i}$ is defined at $P$, so it is in $\mathcal{O}_P(V)$.
 
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $F\in\mathbf C[X,Y]$ be nonzero and $U=\mathbf A^2\setminus \mathcal{V}(F)$. Show that $\Gamma(U)=\mathbf C[X,Y,1/F]$.
+\begin{proof}
+
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $V=\mathcal{V}(Y^2-X^3-X)$ and $P=(0,0)$. Let $\mathcal M=\mathcal{M}_P(V)\subseteq\mathcal{O}_P(V)$. Show that $\dim_{\mathcal C}\mathcal{M}/\mathcal{M}^2=1$.
+\begin{proof}
+First, we note that $Y^2-X^3\in\mathcal{M}^2$. Note that $Y^2-X^3=YY+(-X^2)X$. Since the rational functions $Y,X,-X^2$ all have denominator $1$, and they all vanish at $P=(0,0)$, we have $Y,X,-X^2\in\mathcal{M}$, thus $Y^2,-X^3\in\mathcal{M}^2$, thus $Y^2-X^3\in\mathcal{M}^2$. Therefore $X\in \mathcal{M}^2$ as we have $X\equiv Y^2-X^3\pmod{\mathcal I(V)}$. Thus $X=0$ in $\mathcal{M}/\mathcal{M}^2$. Next, since $Y^2\in M^2$, we have $Y^2=0$ in $\mathcal{M}/\mathcal{M}^2$.  Thus for some rational function $f$ in $\mathcal{M}/\mathcal{M}^2$, all terms with $X$ or $Y^2$ as a factor can be erased, so it leaves us with $f(X,Y)=\frac{aY+b}{cY+d}$. Since $f(P)=0$, we have $b=0$ and $d\ne 0$. Thus $f(X,Y)=0$ or $f(X,Y)=\frac{Y}{cY+d}$ for some $c$ and some $d\ne 0$.
 \end{proof}
 \end{problem}
 \end{document}

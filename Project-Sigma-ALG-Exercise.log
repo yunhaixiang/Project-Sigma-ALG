@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  3 JUN 2021 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  5 JUN 2021 23:39
 entering extended mode
 **./Project-Sigma-ALG-Exercise.tex
 (Project-Sigma-ALG-Exercise.tex
@@ -1138,14 +1138,14 @@ lm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) = \OMS/zplm/m/n/10.95  \OML/zplm/m/it/10.9
 lm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) =
  []
 
-[9] [10] (Project-Sigma-ALG-Exercise.aux)
+[9] [10] [11] (Project-Sigma-ALG-Exercise.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG-Exercise.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23916 strings out of 481267
- 455301 string characters out of 2906339
+ 23923 strings out of 481267
+ 455416 string characters out of 2906339
  735052 words of memory out of 3000000
  40558 multiletter control sequences out of 15000+200000
  435182 words of font info for 113 fonts, out of 3000000 for 9000
@@ -1165,9 +1165,9 @@ all/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Supp
 ort/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Li
 brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on Project-Sigma-ALG-Exercise.pdf (10 pages, 145105 bytes).
+Output written on Project-Sigma-ALG-Exercise.pdf (11 pages, 152092 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
