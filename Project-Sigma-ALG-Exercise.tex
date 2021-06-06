@@ -274,13 +274,29 @@ First, for some $f(X_1,\dots,X_n)=\frac{p(X_1,\dots,X_n)}{q(X_1,\dots,X_n)}$, we
 \begin{problem}
 Let $F\in\mathbf C[X,Y]$ be nonzero and $U=\mathbf A^2\setminus \mathcal{V}(F)$. Show that $\Gamma(U)=\mathbf C[X,Y,1/F]$.
 \begin{proof}
-
+First, $\mathbf A^2$ is a variety since it is equal to $\mathcal V(0)$ and $(0)$ is prime, and its coordinate ring is just $\mathbf C[X,Y]$. By theorem 1.5 with $V=\mathbf A^2$, we have $\Gamma(U)=\mathbf C[X,Y][1/F]=\mathbf C[X,Y,1/F]$.
 \end{proof}
 \end{problem}
+\newpage
 \begin{problem}
 Let $V=\mathcal{V}(Y^2-X^3-X)$ and $P=(0,0)$. Let $\mathcal M=\mathcal{M}_P(V)\subseteq\mathcal{O}_P(V)$. Show that $\dim_{\mathcal C}\mathcal{M}/\mathcal{M}^2=1$.
 \begin{proof}
-First, we note that $Y^2-X^3\in\mathcal{M}^2$. Note that $Y^2-X^3=YY+(-X^2)X$. Since the rational functions $Y,X,-X^2$ all have denominator $1$, and they all vanish at $P=(0,0)$, we have $Y,X,-X^2\in\mathcal{M}$, thus $Y^2,-X^3\in\mathcal{M}^2$, thus $Y^2-X^3\in\mathcal{M}^2$. Therefore $X\in \mathcal{M}^2$ as we have $X\equiv Y^2-X^3\pmod{\mathcal I(V)}$. Thus $X=0$ in $\mathcal{M}/\mathcal{M}^2$. Next, since $Y^2\in M^2$, we have $Y^2=0$ in $\mathcal{M}/\mathcal{M}^2$.  Thus for some rational function $f$ in $\mathcal{M}/\mathcal{M}^2$, all terms with $X$ or $Y^2$ as a factor can be erased, so it leaves us with $f(X,Y)=\frac{aY+b}{cY+d}$. Since $f(P)=0$, we have $b=0$ and $d\ne 0$. Thus $f(X,Y)=0$ or $f(X,Y)=\frac{Y}{cY+d}$ for some $c$ and some $d\ne 0$.
+First, we note that $Y^2-X^3\in\mathcal{M}^2$. Note that $Y^2-X^3=YY+(-X^2)X$. Since the rational functions $Y,X,-X^2$ all have denominator $1$, and they all vanish at $P=(0,0)$, we have $Y,X,-X^2\in\mathcal{M}$ and $Y^2,-X^3\in\mathcal{M}^2$, thus $Y^2-X^3\in\mathcal{M}^2$. Therefore $X\in \mathcal{M}^2$ as we have $X\equiv Y^2-X^3\pmod{\mathcal I(V)}$. Thus $X=0$ in $\mathcal{M}/\mathcal{M}^2$. Next, since $Y^2\in M^2$, we have $Y^2=0$ in $\mathcal{M}/\mathcal{M}^2$.  Thus for some rational function $f$ in $\mathcal{M}/\mathcal{M}^2$, all terms with $X$ or $Y^2$ as a factor can be erased, so it leaves us with $f(X,Y)=\frac{aY+b}{cY+d}$. Since the denominator is nonzero at $P$ and the numerator is $0$ at $P$, we have $b=0$ and $d\ne 0$. Thus $f(X,Y)=0$ or $f(X,Y)=\frac{Y}{cY+d}$ for some $c$ and some $d\ne 0$ (where we assume $a=1$ without loss of generality). Since $\frac{1}{d}Y(cY+d)=\frac{c}{d}Y^2+Y\equiv Y$, we have $f(X,Y)=\frac{Y}{cY+d}\equiv \frac{1}{d}Y$. Thus $\mathcal{M}/\mathcal{M}^2$ is spanned by $Y$, so $\dim_{\mathbf C}\mathcal{M}/\mathcal{M}^2\le 1$. Next, we claim that $\dim_{\mathbf C}\mathcal{M}/\mathcal{M}^2\ne 0$. Assume that $\dim_{\mathbf C}\mathcal{M}/\mathcal{M}^2= 0$, then $Y\in\mathcal{M}^2$, so 
+\end{proof}
+\end{problem}
+\begin{problem}
+Let $V=\mathcal{V}(X^2-Y^3,Y^2-Z^3)$ and $P=(0,0,0)$. Write $\mathcal{M}=\mathcal M_P(V)$, show that $\dim_{\mathbf C}\mathcal{M}/\mathcal{M}^2=3$.
+\begin{proof}
+\end{proof}
+\end{problem}
+\begin{problem}
+If $\phi:\mathbf A^2\rightarrow\mathbf A^2$ is a polynomial map given by $\phi(X,Y)=(f(X,Y),g(X,Y))$, then if $\phi$ is an isomorphism, then $\det D\phi$ is a nonzero constant, where $D\phi$ is the Jacobian matrix.
+\begin{proof}
+Since $\phi$ is an isomorphism, there exists a polynomial map inverse $\mu$. Since $\mu\circ\phi=\mathbf 1$,
+\[1=\det D(\mathbf 1)=\det D(\mu(\phi(X,Y)))=\det((D\mu)(\phi(X,Y))(D\phi))=\det ((D\mu)(\phi(X,Y)))\det D\phi\]
+by chain rule. Thus $\det D\phi\in \mathbf C[X,Y]$ is a unit which is just a nonzero constant.
+
+
 \end{proof}
 \end{problem}
 \end{document}
