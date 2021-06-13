@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  20 MAY 2021 00:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  9 JUN 2021 14:49
 entering extended mode
 **./Project-Sigma-ALG.tex
 (Project-Sigma-ALG.tex
@@ -1130,7 +1130,7 @@ Package rerunfilecheck Info: File `Project-Sigma-ALG.out' has not changed.
 Here is how much of TeX's memory you used:
  24170 strings out of 481267
  461194 string characters out of 2906339
- 730999 words of memory out of 3000000
+ 731001 words of memory out of 3000000
  40816 multiletter control sequences out of 15000+200000
  435938 words of font info for 116 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -1150,7 +1150,7 @@ tion Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></Users/
 yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palati
 no/uplr8a.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Project-Sigma-ALG.pdf (10 pages, 145657 bytes).
+Output written on Project-Sigma-ALG.pdf (10 pages, 145780 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
