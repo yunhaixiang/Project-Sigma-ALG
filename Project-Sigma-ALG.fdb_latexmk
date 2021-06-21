@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1623221384 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1623221385
+["pdflatex"] 1623221384 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1624270760
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1615737732 6309110 07cd7117665a88a3b6003c3369adf3f8 ""
-  "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1616223517 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
+  "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1624080978 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc" 1615738380 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136743454 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136743454 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -216,8 +216,8 @@
   "Project-Sigma-ALG.tex" 1623140127 21558 1876df09736ae429450fc2ea18dbe954 ""
   "Project-Sigma-ALG.toc" 1623221385 312 b69542bef3e9bd0d441a8803bc9d80db "pdflatex"
   (generated)
-  "Project-Sigma-ALG.out"
-  "Project-Sigma-ALG.pdf"
   "Project-Sigma-ALG.aux"
-  "Project-Sigma-ALG.toc"
+  "Project-Sigma-ALG.pdf"
   "Project-Sigma-ALG.log"
+  "Project-Sigma-ALG.toc"
+  "Project-Sigma-ALG.out"

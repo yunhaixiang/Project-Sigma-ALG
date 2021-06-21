@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  7 JUN 2021 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  22 JUN 2021 05:33
 entering extended mode
 **./Project-Sigma-ALG-Exercise.tex
 (Project-Sigma-ALG-Exercise.tex
@@ -1138,19 +1138,35 @@ lm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) = \OMS/zplm/m/n/10.95  \OML/zplm/m/it/10.9
 lm/m/n/10.95 (\OML/zplm/m/it/10.95 X\OT1/zplm/m/n/10.95 ) =
  []
 
-[9] [10] [11] (Project-Sigma-ALG-Exercise.aux)
+[9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+[12]
+Overfull \hbox (2.93738pt too wide) in paragraph at lines 358--359
+[][]\OT1/ppl/b/n/10.95 Problem 1.0.35. []\OT1/ppl/m/n/10.95 Note that $\OML/zpl
+m/m/it/10.95 W \OT1/zplm/m/n/10.95 = \OML/zplm/m/it/10.95 V \OMS/zplm/m/n/10.95
+ \ \OML/zplm/m/it/10.95 H \OT1/zplm/m/n/10.95 = \OMS/zplm/m/n/10.95 V\OT1/zplm/
+m/n/10.95 (\OML/zplm/m/it/10.95 L[]\OT1/ppl/m/n/10.95 , [] , \OML/zplm/m/it/10.
+95 L[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 F[]\OT1/ppl/m/n/10.95 , [] , \O
+ML/zplm/m/it/10.95 F[]\OT1/zplm/m/n/10.95 )$\OT1/ppl/m/n/10.95 , and since it i
+s a proper subvariety,
+ []
+
+[13] (Project-Sigma-ALG-Exercise.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG-Exercise.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: EDCC41D7211214634470FB5189DE8E0D;154.
  ) 
 Here is how much of TeX's memory you used:
- 23927 strings out of 481267
- 455488 string characters out of 2906339
- 735052 words of memory out of 3000000
+ 23955 strings out of 481267
+ 455948 string characters out of 2906339
+ 735051 words of memory out of 3000000
  40558 multiletter control sequences out of 15000+200000
  435182 words of font info for 113 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 128i,11n,130p,1982b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,12n,130p,1982b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/base/8r.enc}</Users/yunhai/Library/Application Support/MiKTeX/texmfs/instal
 l/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/yunhai/Library/Application 
@@ -1165,9 +1181,9 @@ all/fonts/type1/urw/palatino/uplb8a.pfb></Users/yunhai/Library/Application Supp
 ort/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></Users/yunhai/Li
 brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on Project-Sigma-ALG-Exercise.pdf (11 pages, 157133 bytes).
+Output written on Project-Sigma-ALG-Exercise.pdf (13 pages, 178268 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

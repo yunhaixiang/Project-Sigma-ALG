@@ -300,4 +300,61 @@ by chain rule. Thus $\det D\phi\in \mathbf C[X,Y]$ is a unit which is just a non
 
 \end{proof}
 \end{problem}
+\newpage
+\begin{problem}Define $A=\mathcal{V}(Y-X^2,Z,W)$ and $C=\mathcal{V}(Y-X^2)$. Then we have a chain
+\[\{0\}\subset A\subset B\subset C\subset \mathbf A^4\]
+where each inclusion is proper. To see this, note that $\{0\}\subseteq A$ but $0\ne (1,1,0,0)\in A$. Note that $A\subseteq B$ since if $z=w=0$ then $z-w^2=0$. Also, $(0,0,1,1)\in B$ but $(0,0,1,1)\not\in A$, so the inclusion is proper. The inclusion $B\subseteq C$ is obvious, and since $(0,0,0,1)\in C$ but $(0,0,0,1)\not\in B$, the inclusion is proper. The final proper inclusion $C\subset \mathbf A^4$ is trivial. The sets $\{0\},\mathbf A^4$ are obviously varieties. It remains to show that $A,B,C$ are varieties as well. Since $\mathbf C[X,Y,Z,W]/(Y-X^2,Z,W)\cong \mathbf C[X]$ an integral domain (via $X\mapsto X$, $Y\mapsto X^2$, $Z\mapsto 0$ and $W\mapsto 0$), $(Y-X^2,Z,W)$ is prime, so $A$ is a variety. Since $\mathbf C[X,Y,Z,W]/(Y-X^2,Z-W^2)\cong \mathbf C[X,W]$ an integral domain (via $X\mapsto X$, $Y\mapsto X^2$, $Z\mapsto W^2$ and $W\mapsto W$), $(Y-X^2,Z-W^2)$ is prime, so $B$ is a variety. The set $C$ is a variety since $Y-X^2$ is irreducible and $\mathbf C[X,Y,Z,W]$ is a ufd. Since $\mathbf A^4$ has dimension $4$, we have $B$ has dimension $2$. 
+\end{problem}
+\begin{problem}
+By theorem 2.3, $V=\mathcal{V}(F)$ is smooth at $P$ iff $(\nabla F)(P)\ne 0$. We calculate that $\nabla (X^4+Y^4-X^2Y^2)=(4X^3-2XY^2,4Y^3-2X^2Y)$. Thus $(0,0)$ is a singular point. For nonzero points $(x,y)$ that satisfies $(4x^3-2xy^2,4y^3-2x^2y)=(0,0)$, if $x\ne 0$ then $4x^3-2xy^2=0$ implies $2x^2=y^2$ implies $y\ne 0$, and if $y\ne 0$ then $4y^3-2x^2y=0$ implies $2y^2=x^2$ implies $x\ne 0$. Thus, we can assume that $x,y\ne 0$. By solving $2x^2=y^2$ and $2y^2=x^2$, we have $4x^2=x^2$ so $3x^2=0$ so $x=0$ which is a contradiction as $x\ne 0$. Thus $(0,0)$ is the only singular point.
+\end{problem}
+\begin{problem}By theorem 2.3, $V=\mathcal{V}(F)$ is smooth at $P$ iff $(\nabla F)(P)\ne 0$. Since $\nabla F=(-\frac{\partial f}{\partial X},2Y)$, the singular points are $(a,0)$ where $\frac{\partial f}{\partial X}(a)=0$. Since $\mathbf C$ is algebraically closed, we have $f(X)=(X-a_1)^{n_1}\cdots (X-a_k)^{n_k}$ for $n_i\in\mathbf Z_{+}$ and $a_i\in\mathbf C$, then we have 
+\[\frac{\partial f}{\partial X}=\sum_{i=1}^n\left[\left(\frac{\partial}{\partial X}(X-a_i)^{n_i}\right)\prod_{j\in \{1,\dots,n\}\setminus \{i\}}(X-a_j)^{n_j}\right]=\sum_{i=1}^n\left[n_i(X-a_i)^{n_i-1}\prod_{j\in \{1,\dots,n\}\setminus \{i\}}(X-a_j)^{n_j}\right]\]
+Thus if $a=a_i$ is a multiple root, we have $\frac{\partial f}{\partial X}(a)=0$. Conversely, if $\frac{\partial f}{\partial X}(a)=0$, then by considering the Taylor expansion, we have $f(X)=(X-a)^2p(X)$ for some polynomial $p$, so $a$ is a multiple root. Thus the singular points are precisely $(a,0)$ where $a$ is a multiple root of $f$.
+\end{problem}
+\begin{problem}Since $C$ is $1$-dimensional variety, we have a maximal proper chain of varieties 
+
+%we have $\{p\}\subset C\subset \mathbf A^2$ properly. We note that $\mathcal{I}(X)=\mathcal{I}(Y)$ then since $\mathcal{I}(X),\mathcal{I}(Y)$ are radical ideals, we have $X=Y$ by Nullstellensatz, and thus $(0)=\mathcal{I}(\mathbf A^2)\subset \mathcal{I}(C)\subset \mathcal{I}(\{p\})=(X-p)$ properly. 
+\end{problem}
+\begin{problem}
+By theorem 2.3, $V=\mathcal{V}(F)$ is smooth at $P$ iff $(\nabla F)(P)\ne 0$. We note that $\nabla F=(\frac{\partial F}{\partial X}, \frac{\partial F}{\partial Y})$. Note that we can assume that $F$ is nonconstant: if $F$ is constant, then either $F=0$, in which case $V=\mathcal{V}(F)=\mathbf A^2$, or $F\ne 0$, in which case $V=\mathcal{V}(F)=\mathbf A^2=\emptyset$, neither of these cases are plane curves. Assume that $F$ is nonconstant, then $\frac{\partial F}{\partial X}$ and $\frac{\partial F}{\partial Y}$ are nonzero, so $\nabla F=(0,0)$ can only have finitely many solutions since $\frac{\partial F}{\partial X}=0$ and $\frac{\partial F}{\partial Y}=0$ can only have finitely many solutions. Thus, there can only be finitely many singular points.
+\end{problem}
+\begin{problem}~\\[-1em]
+\begin{enumerate}[label=(\alph*)]
+	\item 
+	\item Suppose that $n=\dim Y$, then there is a proper chain of varieties, $A_0\subset A_1\subset\cdots\subset A_n=Y$. Consider $B_i=f^{-1}[A_i]$ then we have a chain $B_0\subset B_1\subset\cdots\subset B_n=X$. By problem 5 of homework 2, we have $B_i$ are varieties. Moreover, since $f$ is surjective $f[f^{-1}[U]]=U$ for each $U\subseteq Y$, thus $f^{-1}[A_i]= f^{-1}[A_{i+1}]$ implies $A_i=A_{i+1}$, so the inclusions $B_0\subset B_1\subset\cdots\subset B_n=X$ are proper. Therefore $\dim X$ is at least $n$, so $\dim X\ge \dim Y$.
+\end{enumerate}
+\end{problem}
+\begin{problem}
+First we compute the Jacobian
+\[J_P(V)=\begin{pmatrix}
+-2X&1&0\\
+-3X^2&0&1\\
+\end{pmatrix}\]
+thus we have $J_{(1,1,1)}(V)=\begin{pmatrix}-2&1&0\\-3&0&1\\\end{pmatrix}$, we easily see that $\mathrm{Ker}J_{(1,1,1)}(V)=\{(1,2,3)t:t\in\mathbf C\}$. Therefore the tangent space is $T_{(1,1,1)}(V)=(1,1,1)+\mathrm{Ker}J_{(1,1,1)}(V)=\{(1,1,1)+(1,2,3)t:t\in\mathbf C\}$.
+\end{problem}
+\begin{problem}
+First we compute the Jacobian 
+\[J_{P}(V)=\begin{pmatrix}
+2X&-3Y^2&0\\
+1&0&-3Z^2\\
+\end{pmatrix}\]
+Therefore $J_{(0,0,0)}(V)=\begin{pmatrix}
+0&0&0\\
+1&0&0\\
+\end{pmatrix}$, and so $\mathrm{Rank}J_{(0,0,0)}(V)=1$, thus we have $\dim \mathcal{M}/\mathcal{M}^2=\dim M/M^2=3-1=2$ and the dual of $\mathcal{M}/\mathcal{M}^2$ has the same dimension, so the Zariski tangent space is $2$-dimensional.
+\end{problem}
+\begin{problem}Since $V$ is $1$ dimensional, we have the only proper subvarieties of $V$ are the $0$ dimensional subvarieties, that is, the single points $\{p\}$ where $p\in V$. Since an algebraic set is a finite union of varieties, we have $W$ is a finite union of single points $\{p\}$, so $W$ is finite.
+\end{problem}
+\begin{problem}
+Assume that there is a nonzero rational function $z$ vanish on $S$. For each $p\in S$, there exists a $R,S$ polynomials modulo $(F)$ such that $z=\frac{R}{S}$ where $R(p)=0$ and $S(p)\ne 0$.
+\end{problem}
+\begin{problem}
+Assume without loss of generality (through a translation) that the singularity is at $(0,0)$. Then, we have $(\nabla F)(0,0)= 0$. Suppose that $F(X,Y)=aX^2+bY^2+cXY+dX+eY+f$, then we have $\frac{\partial F}{\partial X}=2aX+cY+d$ and $\frac{\partial F}{\partial Y}=2bY+cX+e$. Taking both $X,Y$ as $0$, we have $(\nabla F)(0,0)=(d,e)$. Thus $F(X,Y)=aX^2+bY^2+cXY+f$. Also, since $F(0,0)=0$ as $(0,0)\in V$, we have $f=0$, thus $F(X,Y)=aX^2+bY^2+cXY$. If $a=0$, then $F(X,Y)=Y(bY+cX)$ is reducible. Otherwise, we have 
+\[F(X,Y)=\left(X-\alpha Y\right)\left(X-\beta Y\right)\]
+where $\alpha=\frac{-c+\sqrt{c^2-4ab}}{2a}$ and $\beta=\frac{-c-\sqrt{c^2-4ab}}{2a}$. So $F(X,Y)$ is reducible as well. Thus, we have $V$ is reducible, since $V(F)=V(G)\cup V(H)$ where $F(X,Y)=G(X,Y)H(X,Y)$ is the reduction.
+\end{problem}
+\begin{problem}
+Note that $W=V\cap H=\mathcal{V}(L_1,\dots,L_s,F_1,\dots,F_r)$, and since it is a proper subvariety, it has strictly lower dimension. Next, we claim that $\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$. We note that $J_P(V)$ is the block matrix with $J_P(W)$ at the bottom and the top rows are $\nabla L_i$ for each $i$. Since $L_i$ are linear, taking the derivatives leaves us with a diagonal matrix (on the top rows). Thus the top rows must have full rank, thus $\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$. Since $\dim W<\dim V$, we have $n-\dim W>n-\dim V$ thus $n-\dim W>\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$, so $P$ is singular.
+\end{problem}
 \end{document}
