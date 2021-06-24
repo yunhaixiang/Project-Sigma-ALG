@@ -347,7 +347,7 @@ Therefore $J_{(0,0,0)}(V)=\begin{pmatrix}
 \begin{problem}Since $V$ is $1$ dimensional, we have the only proper subvarieties of $V$ are the $0$ dimensional subvarieties, that is, the single points $\{p\}$ where $p\in V$. Since an algebraic set is a finite union of varieties, we have $W$ is a finite union of single points $\{p\}$, so $W$ is finite.
 \end{problem}
 \begin{problem}
-Assume that there is a nonzero rational function $z$ vanish on $S$. For each $p\in S$, there exists a $R,S$ polynomials modulo $(F)$ such that $z=\frac{R}{S}$ where $R(p)=0$ and $S(p)\ne 0$.
+Assume that there is a nonzero rational function $z$ vanish on $S$. For each $p\in S$, there exists a $R,S$ polynomials modulo $(F)$ such that $z=\frac{R}{S}$ where $R(p)=0$ and $S(p)\ne 0$. We note that
 \end{problem}
 \begin{problem}
 Assume without loss of generality (through a translation) that the singularity is at $(0,0)$. Then, we have $(\nabla F)(0,0)= 0$. Suppose that $F(X,Y)=aX^2+bY^2+cXY+dX+eY+f$, then we have $\frac{\partial F}{\partial X}=2aX+cY+d$ and $\frac{\partial F}{\partial Y}=2bY+cX+e$. Taking both $X,Y$ as $0$, we have $(\nabla F)(0,0)=(d,e)$. Thus $F(X,Y)=aX^2+bY^2+cXY+f$. Also, since $F(0,0)=0$ as $(0,0)\in V$, we have $f=0$, thus $F(X,Y)=aX^2+bY^2+cXY$. If $a=0$, then $F(X,Y)=Y(bY+cX)$ is reducible. Otherwise, we have 
@@ -355,6 +355,7 @@ Assume without loss of generality (through a translation) that the singularity i
 where $\alpha=\frac{-c+\sqrt{c^2-4ab}}{2a}$ and $\beta=\frac{-c-\sqrt{c^2-4ab}}{2a}$. So $F(X,Y)$ is reducible as well. Thus, we have $V$ is reducible, since $V(F)=V(G)\cup V(H)$ where $F(X,Y)=G(X,Y)H(X,Y)$ is the reduction.
 \end{problem}
 \begin{problem}
-Note that $W=V\cap H=\mathcal{V}(L_1,\dots,L_s,F_1,\dots,F_r)$, and since it is a proper subvariety, it has strictly lower dimension. Next, we claim that $\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$. We note that $J_P(V)$ is the block matrix with $J_P(W)$ at the bottom and the top rows are $\nabla L_i$ for each $i$. Since $L_i$ are linear, taking the derivatives leaves us with a diagonal matrix (on the top rows). Thus the top rows must have full rank, thus $\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$. Since $\dim W<\dim V$, we have $n-\dim W>n-\dim V$ thus $n-\dim W>\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$, so $P$ is singular.
+Note that $W=H\cap V=\mathcal{V}(L_1,\dots,L_s,F_1,\dots,F_r)$, and since it is a proper subvariety, $\dim W<\dim V$. Next, we note that $\dim V\le \dim H$ (by prof's email), so $\dim W<\dim H$, and $n-\dim W>n-\dim H$. We note that $J_P(W)$ is the block matrix with $J_P(V)$ at the bottom and $J_P(H)$ at the top, so $\mathrm{Rank}J_P(W)=\mathrm{Rank}J_P(V)+\mathrm{Rank}J_P(H)$. 
+%Next, we claim that $\mathrm{Rank}J_P(V)\ge \mathrm{Rank}J_P(W)$. We note that $J_P(V)$ is the block matrix with $J_P(W)$ at the bottom and the top rows are $\nabla L_i$ for each $i$. Thus $\mathrm{Rank}J_P(V)=\mathrm{Rank}J_P(W)$. Since $\dim W<\dim V$, we have $n-\dim W>n-\dim V$ thus $n-\dim W>\mathrm{Rank}J_P(V)\ge\mathrm{Rank}J_P(W)$, so $P$ is singular.
 \end{problem}
 \end{document}
