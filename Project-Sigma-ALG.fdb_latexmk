@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1624550542 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1624550543
+["pdflatex"] 1638012015 "Project-Sigma-ALG.tex" "Project-Sigma-ALG.pdf" "Project-Sigma-ALG" 1638012016
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1615737732 6309110 07cd7117665a88a3b6003c3369adf3f8 ""
-  "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1624080978 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
+  "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map" 1628989033 123957 2f675664f9d8e6b474051dbca8bf3a76 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc" 1615738380 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136743454 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136743454 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -211,13 +211,13 @@
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/varwidth/varwidth.sty" 1615738156 10894 d359a13923460b2a73d4312d613554c8 ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1615738246 57049 74963e80d77be39a0b7442967b27c75b ""
   "/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1615738087 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "Project-Sigma-ALG.aux" 1624550543 4766 426756b60faade0f8997d4d646c483dc "pdflatex"
-  "Project-Sigma-ALG.out" 1624550543 797 de6b7ca9cbaed01aa72b5f3f0fa63814 "pdflatex"
-  "Project-Sigma-ALG.tex" 1624550540 20144 1c5a6855c35bc60da3610b5e5d0c8254 ""
-  "Project-Sigma-ALG.toc" 1624550543 397 241e064948656eca440be14e72b873ef "pdflatex"
+  "Project-Sigma-ALG.aux" 1638012016 6874 0ea79e372155ab6d7a7c81d275c9fb5a "pdflatex"
+  "Project-Sigma-ALG.out" 1638012016 1114 f210995d2fff4b0bfba810244876c7fa "pdflatex"
+  "Project-Sigma-ALG.tex" 1638012015 32237 6686ee33a02b33be6c10a6b88fb4accc ""
+  "Project-Sigma-ALG.toc" 1638012016 611 5da3f5fa489217aca410a7a08ba1c1ab "pdflatex"
   (generated)
-  "Project-Sigma-ALG.log"
-  "Project-Sigma-ALG.aux"
-  "Project-Sigma-ALG.out"
   "Project-Sigma-ALG.pdf"
+  "Project-Sigma-ALG.log"
   "Project-Sigma-ALG.toc"
+  "Project-Sigma-ALG.out"
+  "Project-Sigma-ALG.aux"

@@ -64,7 +64,7 @@
 \renewcommand{\sectionautorefname}{\S}
 \renewcommand{\subsectionautorefname}{\S}
 \renewcommand{\subsubsectionautorefname}{\S}
-
+\renewcommand{\thetable}{\thechapter.\Alph{table}}
 
 %%%%%%%%%%%%% SHORTCUTS %%%%%%%%%%%%%%%
 \DeclareMathOperator{\N}{\mathbf{N}}
@@ -112,8 +112,99 @@
 \singlespacing
 \newpage
 %\setlength{\parskip}{10pt}
-\chapter{Algebraic Varieties}
-\section{Affine Algebraic Set}
+\chapter{Preliminaries}
+
+\section{Categories and Functors}
+To discuss algebraic geometry cleanly and efficiently, we need to introduce category theory. Given sets $X$ and $Y$, from elementary set theory, a \textit{function} $f:X\rightarrow Y$ consists of the information of its \textit{domain} $X$, \textit{codomain} $Y$, and \textit{graph} $G\subseteq X\times Y$ where for each $x\in X$ there exists unique $y\in Y$ such that $(x,y)\in G$. In category theory, we generalize the notion of a function. Suppose we are given two \textit{objects} $X$ and $Y$, a \textit{morphism} $f:X\rightarrow Y$ consists of the information of its \textit{source} $X$, \textit{target} $Y$, and possibly some additional information. It is meaningless to talk about a morphism without talking about the category it belongs to, therefore we will make these terminologies precise.
+\begin{definition}A \textit{category} $\mathcal C$ is the following data
+\begin{enumerate}[label=(\roman*)]
+	\item A class, also denoted $\mathcal C$, whose elements are called \textit{objects} of $\mathcal C$,
+	\item for each pair of objects $X,Y\in \mathcal C$, a class $\mathrm{Mor}(X,Y)$ of \textit{morphisms} from $X$ to $Y$, such that each $f\in \mathrm{Mor}(X,Y)$ consists of the data of its \textit{source} $X$, \textit{target} $Y$, and possibly additional data,
+	\item for each triple of object $X,Y,Z\in\mathcal C$, a \textit{composition} function 
+	\[(-\circ -):\mathrm{Mor}(Y,Z)\times\mathrm{Mor}(X,Y)\rightarrow \mathrm{Mor}(X,Z)\]
+	such that the following axioms are satisfied
+	\begin{itemize}
+		\item \textit{identity axiom}: for each $X\in\mathcal{C}$, exists $\mathbf 1_X\in\mathrm{Mor}(X,X)$ s.t. if $Y\in\mathcal C$, for all $f\in\mathrm{Mor}(X,Y)$ we have $f\circ \mathbf 1_X=f$ and for all $g\in \mathrm{Mor}(Y,X)$ we have $\mathbf 1_X\circ g=g$.
+		\item \textit{associativity axiom}: for each quadruple of objects $X,Y,Z,W\in \mathcal C$, given $f\in \mathrm{Mor}(X,Y)$, $g\in \mathrm{Mor}(Y,Z)$, and $h\in\mathrm{Mor}(Z,W)$, we have $(h\circ g)\circ f=h\circ (g\circ f)$.
+	\end{itemize}
+\end{enumerate}
+Moreover, we say that the category is \textit{locally small} if $\mathrm{Mor}(X,Y)$ is a set for all objects $X,Y$, and \textit{small} if it is locally small and the class of objects is also a set. By convention, we use $f:X\rightarrow Y$ to denote $f\in\mathrm{Mor}(X,Y)$ when there is no risk of confusion. 
+\end{definition}
+\begin{example}The quintessential example to keep in mind is the category $\mathbf{Set}$ whose objects are sets and the morphisms are just functions between sets with the usual composition. In fact, many categories we encounter are such that their objects are ``sets with extra structures'' and morphisms are ``functions with structure-preserving properties''. They are known as \textit{concrete categories} but we will not make this term precise or use this terminology. In the next page, we will provide a list of the definitions of these type of categories.
+\end{example}
+
+\begin{table}[ht]
+\centering
+\caption{Table of some useful categories}
+\vspace{3mm}
+\begin{tabular}[t]{l|c|c|c}
+\textit{name of category} & \textit{notation} & \textit{objects} & \textit{morphisms}\\
+\hline
+category of sets &$\mathbf{Set}$ & sets & functions\\
+category of groups & $\mathbf{Grp}$ & groups & group homomorphisms\\
+category of abelian groups & $\mathbf{Ab}$ & abelian groups & group homomorphisms \\
+category of rings & $\mathbf{CRing}$ & (commutative) rings & ring homomorphisms\\
+category of posets & $\mathbf{Pos}$ & posets & increasing functions\\
+category of graphs & $\mathbf{Graph}$ & (simple) graphs & graph homomorphisms\\
+category of topological spaces & $\mathbf{Top}$ & topological spaces & continuous functions\\
+category of Hausdorff spaces & $\mathbf{Haus}$ & Hausdorff spaces & continuous functions\\
+category of $\mathscr{C}^\ell$ manifolds & $\mathbf{Man}_{\ell}$ & $\mathscr{C}^\ell$ manifolds & $\mathscr{C}^\ell$ maps\\
+category of affine spaces over $k$ & $\mathbf{Aff}_k$ & affine spaces over $k$ & affine maps\\
+category of vector spaces over $k$ & $\mathbf{Vect}_k$ & vector spaces over $k$ & linear maps\\
+category of modules over $R$ & $\mathbf{Mod}_R$ & modules over $R$ & module homomorphisms\\
+\end{tabular}
+\label{tab:cat}
+\end{table}
+\begin{remark}Throughout this note, the term rings refers to commutative rings (with unit), thus we will not introduce the category $\mathbf{Ring}$ which includes possibly non-commutative rings.
+\end{remark}
+\begin{definition}Suppose $\mathcal C$ is a category with $X,Y\in\mathcal C$, a morphism $f:X\rightarrow Y$ is a(n)
+\begin{enumerate}[label=(\roman*)]
+	\item \textit{endomorphism} if $X=Y$,
+	\item \textit{monomorphism} if left-cancellable, i.e. $f\circ g=f\circ h$ implies $g=h$ for $g,h:Z\rightarrow X$ and $Z\in\mathcal C$,
+	\item \textit{epimorphism} if right-cancellable, i.e. $g\circ f=h\circ f$ implies $g=h$ for $g,h:X\rightarrow Z$ and $Z\in\mathcal C$,
+	\item \textit{split monomorphism} if it admits left-inverse, i.e. there exists $g:Y\rightarrow X$ such that $g\circ f=\mathbf 1_X$,
+	\item \textit{split epimorphism} if it admits right-inverse, i.e there exists $g:Y\rightarrow X$ such that $f\circ g=\mathbf 1_Y$,
+	\item \textit{bimorphism} if it's both a monomorphism and an epimorphism,
+	\item \textit{isomorphism} if it's both a split monomorphism and a split epimorphism,
+	\item \textit{automorphism} if it's both an isomorphism and an endomorphism. 
+\end{enumerate}
+Moreover, a category where all morphisms are isomorphisms is a \textit{groupoid}. 
+\end{definition}
+In $\mathbf{Set}$, the monomorphisms are exactly the injections and epimorphisms exactly surjections. In ``concrete categories'', the injective morphisms are monic and the surjective morphisms are epic, but the converes need not hold. A classical counterexample is the canonical inclusion $\mathbf Z\hookrightarrow\mathbf Q$ in $\mathbf{CRing}$, which is epic but is clearly not surjective. This is also an example of an epimorphism that is not split. Straightforwardly, split monomorphisms are monomorhpisms and split epimorphisms are epimorphisms. The converses need not hold as we have seen in the previous example. Hence, a bimorphism need not be an isomorphism, even though an isomorphism must be a bimorphism. 
+
+Even though most categories I've shown so far are ``concrete categories'', there are categories where the morphisms are not functions. A classical example is the category $\mathbf{Rel}$ where the objects are sets and a morphism $f:X\rightarrow Y$ is just a subset $f\subseteq X\times Y$. Given two morphisms $f:X\rightarrow Y$ and $g:Y\rightarrow Z$, define the composition $g\circ f:X\rightarrow Z$ as the set $g\circ f=\{(a,c)\in X\times Z:\exists b\in Y,(a,b)\in f\textrm{\ and\ }(b,c)\in g\}$. We can easily check that this category is well defined, and moreover, the identity on an object is the equality relation as one would expect.
+
+\begin{definition}Let $\mathcal C$ and $\mathcal D$ be categories, a \textit{(covariant) functor} $\mathscr{F}:\mathcal C\rightarrow\mathcal{D}$ is the following data,
+\begin{enumerate}[label=(\roman*)]
+	\item for each object $X\in\mathcal C$, an object $\mathscr{F}(X)\in\mathcal D$,
+	\item for each morphism $f:X\rightarrow Y$ of $\mathcal C$, a morphism $\mathscr{F}f:\mathscr{F}(X)\rightarrow\mathscr{F}(Y)$ of $\mathcal D$, s.t.
+	\begin{itemize}
+		\item $\mathscr{F}\mathbf{1}_X=\mathbf 1_{\mathscr{F}(X)}$ for all $X\in\mathcal C$,
+		\item $\mathscr{F}(g\circ f)=\mathscr{F}g\circ\mathscr{F}f$ for all morphisms $f:X\rightarrow Y$ and $g:Y\rightarrow Z$.
+	\end{itemize}
+\end{enumerate}
+A \textit{contravariant functor} $\mathscr{F}:\mathcal C\rightarrow\mathcal D$ is defined similarly, except for each morphism $f:X\rightarrow Y$ of $\mathcal C$ we assign a morphism $\mathscr{F}f:\mathscr{F}(Y)\rightarrow\mathscr{F}(X)$, reversing all the arrows. We can think of a contravariant functor $\mathscr{F}:\mathcal{C}\rightarrow\mathcal D$ as a covariant functor $\mathscr{F}:\mathcal{C}^{\mathrm{op}}\rightarrow\mathcal D$ where we define the \textit{opposite category} $\mathcal C^{\mathrm{op}}$ as the category with the same objects as $\mathcal{C}$ but $\mathrm{Mor}_{\mathcal{C}^{\mathrm{op}}}(X,Y)=\mathrm{Mor}_{\mathcal{C}}(Y,X)$ for all objects $X,Y\in\mathcal C^{\mathrm{op}}$. Moreover, we say that the functor $\mathscr{F}:\mathcal C\rightarrow \mathcal D$ is \textit{faithful} (resp. \textit{full}) if the function (where we abuse notation)
+$\mathscr{F}:\mathrm{Mor}_{\mathcal C}(X,Y)\rightarrow\mathrm{Mor}_{\mathcal D}(\mathscr F(X),\mathscr F(Y))$ given by $f\mapsto \mathscr{F}f$ is injective (resp. surjective) for all objects $X,Y\in\mathcal C$. We say that $\mathscr{F}$ is \textit{fully faithful} if it's both full and faithful. The compositions of functors is the obvious element-wise composition
+\end{definition}
+The reason we use the notation $\mathscr{F}:\mathcal C\rightarrow\mathcal D$ is that we view functors as ``morphisms'' between categories, but there is just this small issue: there can not possibly be a category of all categories, as that would lead to set-theoretic troubles. We can, however, define the category $\mathbf{Cat}$ whose objects are all small categories with functors as morphisms. It should be noted that even if one of $\mathcal C$ or $\mathcal D$ is not small, we can still talk about functors between them and and use the notation $\mathscr{F}:\mathcal C\rightarrow\mathcal D$ even if technically $\mathscr{F}$ is not a morphism of any category we defined. 
+\begin{example}Define $\mathbf{Top}_{\bullet}$ as the category of pointed topological spaces, i.e. the category where the objects are topological spaces with a choice of a base point and the morphisms are continuous functions that preserve the base points. Define functor $\pi_1:\mathbf{Top}_{\bullet}\rightarrow\mathbf{Grp}$ which assigns to each pointed topological space $\langle x,X\rangle$ the fundamental group $\pi_1(x,X)$. For each $f:\langle x,X\rangle\rightarrow \langle y,Y\rangle$, we assign $\pi_1f:\pi_1(x,X)\rightarrow\pi_1(y,Y)$ the induced homomorphism $[\varphi]\mapsto [f\circ\varphi]$.
+\end{example}
+
+In category theory, we like to draw diagrams a lot. To draw a diagram in a category $\mathcal C$, we pick out some objects in $\mathcal C$ and pick out some morphisms between these chosen objects, we write down symbols for the chosen objects and draw arrows representing the chosen morphisms, e.g.
+
+
+
+The reason we require a functor to preserve identity and preserve composition is precisely because we want functors to ``preserve diagrams''.
+\begin{definition}Let $\mathcal C,\mathcal D$ be categories, $\mathscr{F},\mathscr{G}:\mathcal{C}\rightarrow\mathcal D$ functors. A \textit{natural transformation} $\phi:\mathscr{F}\rightarrow\mathscr{G}$ is the data of a map $\phi(X):\mathscr{F}(X)\rightarrow\mathscr{G}(X)$ for each $X\in\mathcal C$ s.t. the diagram
+
+commutes, i.e. $\phi(Y)\circ \mathscr{G}f=\mathscr{F}f\circ\phi(X)$ for all morphisms $f:X\rightarrow Y$ and objects $X,Y\in\mathcal C$.
+\end{definition}
+
+
+
+\section{Limits}
+\section{Additive and Abelian Categories}
+\section{Varieties}
 Let $k$ be a field and $n\in\mathbf N$, then the \textit{affine space} $\mathbf A^n(k)$ of dimension $n$, or simply $\mathbf A^n$ if it does not cause confusion, is the same structure as the $n$-dimensional vector space $k^n$ over $k$, except with affine maps as morphisms, where an affine map is a linear map shifted by a constant. 
 
 \begin{definition}
@@ -173,47 +264,49 @@ Suppose that $\mathcal{L}$ is the set of algebraic sets that do not admit a fini
 
 \section{Hilbert's Nullstellensatz}
 
-\chapter{Sheaves and Schemes}
+\chapter{Schemes}
 \section{Presheaves and Sheaves}
-\begin{definition}A \textit{presheaf} $\mathscr{F}$ of sets on a topological space $X$ contains the following information:
+Let $X$ be a topological space, and $\mathcal C$ a category whose objects are ``sets with extra structures'' and morphisms are ``functions with structure-preserving properties'', i.e. a ``concrete category''. You may think of $\mathcal C$ as one of the categories $\mathbf{Set},\mathbf{Ab},\mathbf{CRing}$, or $\mathbf {Mod}_R$.
+\begin{definition}\label{def:presheaf}A \textit{presheaf} $\mathscr{F}$ of $\mathcal C$ on $X$ is the data of the following
 \begin{enumerate}[label=(\roman*)]
-	\item for each open $U\subseteq X$, a set $\mathscr{F}(U)$, the elements of which are called the \textit{sections} of $\mathscr{F}$ over $U$,
-	\item for each inclusion $U\hookrightarrow V$ of open sets, a \textit{restriction} map $\mathrm{Res}^V_U:\mathscr{F}(V)\rightarrow\mathscr{F}(U)$, such that
+	\item for each open $U\subseteq X$, some $\mathscr{F}(U)\in \mathcal C$, whose elements are called the \textit{sections} of $\mathscr{F}$ over $U$,
+	\item for each inclusion $U\hookrightarrow V$ of open sets of $X$, a \textit{restriction} map $\mathrm{Res}^V_U:\mathscr{F}(V)\rightarrow\mathscr{F}(U)$, s.t.
 	\begin{itemize}
-		\item for all $U\subseteq X$, the map $\mathrm{Res}^U_U$ is the identity map,
-		\item if $U\hookrightarrow V \hookrightarrow W$ are inclusions of open sets then the diagram
+		\item for all open $U\subseteq X$, the map $\mathrm{Res}^U_U=\mathbf 1_{\mathscr{F}(U)}$,
+		\item if $U\hookrightarrow V \hookrightarrow W$ are inclusions of open sets of $X$ then the diagram
 		\[
 		\begin{tikzcd}[sep=huge]
 			\mathscr{F}(W) \arrow[r,"\mathrm{Res}^W_V"] \arrow[rr, "\mathrm{Res}^W_U", bend left, shift left=1] & \mathscr{F}(V) \arrow[r,"\mathrm{Res}^V_U"] & \mathscr{F}(U)
 		\end{tikzcd}
 		\]
-		commutes, in other words, $\mathrm{Res}^W_U=\mathrm{Res}^V_U\circ \mathrm{Res}^W_V$
+		commutes, or in other words $\mathrm{Res}^W_U=\mathrm{Res}^V_U\circ \mathrm{Res}^W_V$
 	\end{itemize}
 \end{enumerate}
-Moreover, suppose that $\mathscr{F},\mathscr{G}$ are presheaves of sets on $X$, then a morphism $\phi:\mathscr{F}\rightarrow\mathscr{G}$ is the data of a map $\phi(U):\mathscr{F}(U)\rightarrow\mathscr{G}(U)$ for each open $U\subseteq X$ such that the diagram
+Moreover, suppose that $\mathscr{F},\mathscr{G}$ are presheaves of $\mathcal C$ on $X$, then a morphism $\phi:\mathscr{F}\rightarrow\mathscr{G}$ is the data of a map $\phi(U):\mathscr{F}(U)\rightarrow\mathscr{G}(U)$ for each open $U\subseteq X$ such that whenever $U\hookrightarrow V$ is an inclusion of open sets, the following diagram (where we abuse the notation $\mathrm{Res}^V_U$)
 \[
 \begin{tikzcd}[sep = huge]
 \mathscr{F}(V) \arrow[r, "\phi(V)"] \arrow[d, "\mathrm{Res}^V_U"'] & \mathscr{G}(V) \arrow[d, "\mathrm{Res}^V_U"] \\
 \mathscr{F}(U) \arrow[r, "\phi(U)"]                 & \mathscr{G}(U)               
 \end{tikzcd}\]
-commutes whenever $U\hookrightarrow V$ is an inclusion of open sets (where we abuse the notation $\mathrm{Res}^V_U$).
+commutes, i.e. $\mathrm{Res}^V_U\circ\phi(V)=\phi(U)\circ\mathrm{Res}^V_U$. The composition of these morphisms is element-wise.
 \end{definition}
-In fact, we can see that a presheaf of sets on a topological space is exactly the same information of a contravariant functor from the category of open sets of $X$, which is the category consisting of all open sets of $X$ as objects and inclusions as morphisms, to the category of sets. 
-\begin{definitionbox}
-Let $\mathcal{C},\mathcal{D}$ be categories where $\mathcal{C}$ is small, then a $\mathcal{D}$-valued presheaf on $\mathcal{C}$ is a functor $\mathcal{C}^{\mathrm{op}}\rightarrow\mathcal{D}$, and the category of $\mathcal{D}$-valued presheaf on $\mathcal{C}$ is the functor category $[\mathcal{C}^{\mathrm{op}},\mathcal{D}]$.
-\end{definitionbox}
-
-Many examples of presheaves come from different classes of functions (with the obvious restriction map). For example, we can define $\mathscr{F}(U)=\mathscr{C}^0(U)$ as the set of continuous real-valued functions on $U$, or we can define $\mathscr{F}(U)=\mathscr{B}(U)$ as the set of complex-valued functions on $U$ that are bounded. There is also the \textit{constant presheaf} associated with a set $S$ where $\mathscr{F}(U)=S$ for all open $U\subseteq X$, and the retriction map is the identity map on $S$.
-\begin{definition}Let $\mathscr{F}$ be a presheaf on a topological space $X$, then we define the \textit{stalk} $\mathscr{F}_p$ of $\mathscr{F}$ at a point $p\in X$, whose elements are called \textit{germs} of $\mathscr{F}$ at $p$, as
-\[\mathscr{F}_p=\left.\left\{(f,U):\begin{array}{c}f\in\mathscr{F}(U),\textrm{\ and\ }U\subseteq X\textrm{\ is}\\\textrm{an\ open\ neighborhood\ of\ }p\end{array}\right\} \middle/ \left\{\begin{array}{c}(f,U)\sim (g,V)\textrm{\ if\ and\ only\ if\ exists\ }\\W\subseteq U\cap V\textrm{\ such\ that\ }\mathrm{Res}^U_Wf=\mathrm{Res}^V_Wg\end{array}\right\}\right.\]
-In other words, $\mathscr{F}_p$ is the colimit $\displaystyle\lim_{\longrightarrow}\mathscr{F}(U)$ indexed over open neighborhoods $U$ of $p$ with inclusion.
-\end{definition}
-Moreover, in many cases like the examples mentioned above where $\mathscr{F}(U)$ is a set of functions, we can define a ring structure on the stalk $\mathscr{F}_p$ by defining $[(f,U)]+[(g,V)]=[(f+g,U\cap V)]$ and $[(f,U)][(g,V)]=[(fg,U\cap V)]$. We can check that this is well-defined. Hence, in many situations, we will consider $\mathscr{F}_p$ as a ring (which is an abuse of notation). Stalks capture the local properties of a (pre)sheaf, which we will elaborate later.
-\begin{definition}A presheaf $\mathscr{F}$ on a topological space $X$ is a \textit{sheaf} if for any open set $U\subseteq X$ and any open cover $\{U_i\}_{i\in\mathcal{I}}$ of $U$ the following two axioms are satisfied:
+In fact, let $\mathcal{G}_X$ be the category of open sets of $X$, i.e. the objects of $\mathcal{G}_X$ are the open sets of $X$ and the morphisms are the inclusions of open sets, then a presheaf of $\mathcal C$ on $X$ is the same information as a contravariant functor from $\mathcal{G}_X$ to $\mathcal C$. Moreover, a morphism between presheaves of $\mathcal C$ on $X$ is the same information as a natural transformation between contravariant functors from $\mathcal{G}_X$ to $\mathcal C$. Thus the category of presheaves of $\mathcal C$ on $X$ is just the contravariant functor category $\mathrm{Func}^{\mathrm{op}}(\mathcal{G}_X,\mathcal C)$. One can check that this is just a restatement of \autoref{def:presheaf}. Therefore, we will view a presheaf of $\mathcal C$ on $X$ just as a contravariant functor from $\mathcal{G}_X$ to $\mathcal C$. 
+\begin{definition}A presheaf $\mathscr{F}$ of $\mathcal C$ on $X$ is a \textit{sheaf} if for any open set $U\subseteq X$ and any open cover $\{U_i\}_{i\in\mathcal{I}}$ of $U$ the following two axioms are satisfied:
 \begin{enumerate}[label=(\roman*)]
-	\item \textit{identity axiom}: if $f,g\in\mathscr{F}(U)$, then $\mathrm{Res}^U_{U_i}f=\mathrm{Res}^U_{U_i}g$ for all $i\in\mathcal{I}$ implies that $f=g$, and
-	\item \textit{gluability axiom}: if $f_i\in \mathscr{F}(U_i)$ for all $i\in\mathcal{I}$ is such that $\mathrm{Res}^{U_i}_{U_i\cap U_j}f_i=\mathrm{Res}^{U_j}_{U_i\cap U_j}f_j$ for all $i,j\in\mathcal{I}$, then there exists some $f\in\mathscr{F}(U)$ such that $\mathrm{Res}^U_{U_i}f=f_i$ for all $i\in\mathcal{I}$.
+	\item \textit{identity axiom}: if $f,g\in\mathscr{F}(U)$, then $\mathrm{Res}^U_{U_i}(f)=\mathrm{Res}^U_{U_i}(g)$ for all $i\in\mathcal{I}$ implies that $f=g$, 
+	\item \textit{gluability axiom}: if $f_i\in \mathscr{F}(U_i)$ for all $i\in\mathcal{I}$ is such that $\mathrm{Res}^{U_i}_{U_i\cap U_j}(f_i)=\mathrm{Res}^{U_j}_{U_i\cap U_j}(f_j)$ for all $i,j\in\mathcal{I}$, then there exists some $f\in\mathscr{F}(U)$ such that $\mathrm{Res}^U_{U_i}(f)=f_i$ for all $i\in\mathcal{I}$.
 \end{enumerate}
+Moreover, we will write a \textit{(pre)sheaf of sets} on $X$ to mean a (pre)sheaf of $\mathbf{Set}$ on $X$, and a \textit{(pre)sheaf of rings} on $X$ to mean a (pre)sheaf of $\mathbf{CRing}$ on $X$, and so on for all other possibilities for $\mathcal C$.
+\end{definition}
+\begin{example}A motivating example is the following. Suppose that $X=\mathbf R^n$, then define a sheaf of rings $\mathscr{F}$ on $X$ by letting $\mathscr{F}(U)=\{\mathrm{smooth\ functions\ }U\rightarrow \mathbf R\}$ for all open $U\subseteq X$ with the natural operations. For an inclusion of open sets $U\hookrightarrow V$ the restriction map $\mathrm{Res}^V_U$ is defined in the obvious way. We can easily check that $\mathscr{F}$ is well-defined. This sheaf is the \textit{sheaf of rings of smooth functions}.
+\end{example}
+\begin{definition}Let $\mathscr{F}$ be a presheaf of $\mathcal C$ on $X$, the \textit{stalk} $\mathscr{F}_p$ of $\mathscr{F}$ at a point $p\in X$, whose elements are called \textit{germs} of $\mathscr{F}$ at $p$, is an object of $\mathcal C$ where
+\[\mathscr{F}_p=\left.\left\{(f,U):\begin{array}{c}f\in\mathscr{F}(U),\textrm{\ and\ }U\subseteq X\textrm{\ is}\\\textrm{an\ open\ neighborhood\ of\ }p\end{array}\right\} \middle/ \left\{\begin{array}{c}(f,U)\sim (g,V)\textrm{\ if\ and\ only\ if\ exists\ open}\\W\subseteq U\cap V\textrm{\ such\ that\ }\mathrm{Res}^U_W(f)=\mathrm{Res}^V_W(g)\end{array}\right\}\right.\]
+with its extra structure inherited from $\mathscr{F}$ in the obvious way. For example, if $\mathcal C=\mathbf{CRing}$, then the extra structure of $\mathscr{F}_p$, the addition and multiplication, is defined as follows,
+\[\begin{aligned} (f,U)+(g,V)&=(\mathrm{Res}^U_{U\cap V}(f)+\mathrm{Res}^V_{U\cap V}(g),U\cap V)\\ (f,U)(g,V)&=(\mathrm{Res}^U_{U\cap V}(f)\mathrm{Res}^V_{U\cap V}(g),U\cap V)\end{aligned}\]
+We can check that this is well defined. In fact, we can formalize $\mathscr{F}_p$ as a colimit
+\[\mathscr{F}_p=\lim_{\longrightarrow}\,\mathscr{F}(U)\textrm{\ indexed\ over\ }p\in U\in\mathcal G_X\]
+
 \end{definition}
 
 \end{document}

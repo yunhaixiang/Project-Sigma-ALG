@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  25 JUN 2021 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.14)  27 NOV 2021 06:20
 entering extended mode
 **./Project-Sigma-ALG.tex
 (Project-Sigma-ALG.tex
@@ -1091,50 +1091,56 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 ]
 Chapter 1.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 120.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 125.
-[5]
-Package hyperref Info: bookmark level for unknown theorembox defaults to 0 on i
-nput line 139.
-Package hyperref Info: bookmark level for unknown definitionbox defaults to 0 o
-n input line 148.
-Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
-ut line 150.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 152.
- [6]
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 171.
- [7] [8
+nput line 119.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
+27.
 
-]
-Chapter 2.
-LaTeX Font Info:    Trying to load font information for U+eus on input line 178
+(/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnf
+ss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 133.
+LaTeX Font Info:    Trying to load font information for U+eus on input line 151
 .
 
 (/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsf
 onts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-83.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 158.
+ [5] [6] [7]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 216.
+Package hyperref Info: bookmark level for unknown theorembox defaults to 0 on i
+nput line 230.
+ [8]
+Package hyperref Info: bookmark level for unknown definitionbox defaults to 0 o
+n input line 239.
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
+ut line 241.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 243.
+ [9]
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 262.
+ [10]
+Chapter 2.
+[11
 
-(/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnf
-ss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [9] [10] (Project-Sigma-ALG.aux)
+] [12] (Project-Sigma-ALG.aux)
 Package rerunfilecheck Info: File `Project-Sigma-ALG.out' has not changed.
-(rerunfilecheck)             Checksum: DE6B7CA9CBAED01AA72B5F3F0FA63814;797.
+(rerunfilecheck)             Checksum: F210995D2FFF4B0BFBA810244876C7FA;1114.
  ) 
 Here is how much of TeX's memory you used:
- 24171 strings out of 481267
- 461218 string characters out of 2906339
- 729998 words of memory out of 3000000
- 40818 multiletter control sequences out of 15000+200000
+ 24212 strings out of 481267
+ 461714 string characters out of 2906339
+ 730093 words of memory out of 3000000
+ 40826 multiletter control sequences out of 15000+200000
  435938 words of font info for 116 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 128i,15n,130p,2045b,1337s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 128i,15n,130p,2045b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dv
 ips/base/8r.enc}</Users/yunhai/Library/Application Support/MiKTeX/texmfs/instal
 l/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/yunhai/Library/Application 
@@ -1150,9 +1156,9 @@ tion Support/MiKTeX/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></Users/
 yunhai/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/palati
 no/uplr8a.pfb></Users/yunhai/Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Project-Sigma-ALG.pdf (10 pages, 144592 bytes).
+Output written on Project-Sigma-ALG.pdf (12 pages, 164534 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

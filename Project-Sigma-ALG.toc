@@ -1,5 +1,8 @@
-\contentsline {chapter}{\numberline {1}Algebraic Varieties}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Affine Algebraic Set}{5}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Hilbert's Nullstellensatz}{7}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Sheaves and Schemes}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Presheaves and Sheaves}{9}{section.2.1}%
+\contentsline {chapter}{\numberline {1}Preliminaries}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Categories and Functors}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Limits}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Additive and Abelian Categories}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Varieties}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Hilbert's Nullstellensatz}{10}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Schemes}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Presheaves and Sheaves}{11}{section.2.1}%
